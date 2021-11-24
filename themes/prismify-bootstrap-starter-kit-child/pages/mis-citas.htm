@@ -1,0 +1,60 @@
+title = "Mis Citas"
+layout = "default"
+url = "/mis-citas"
+==
+
+<div class="container container-citas">
+    <div class="main-content forms">
+        <div class="container-text ">
+            <h3>SOLICITAR CONSULTA MÉDICA</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse commodi debitis accusantium aut ducimus aliquid odit iste sint voluptatum suscipit! Minus repellat cum aliquid odit voluptas obcaecati repudiandae officiis totam.</p>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-5 col-md-6">    
+        <div class="form-group">
+            <label for="names">Nombres completos</label>
+            <input type="text" class="form-control" name="names" id="names">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="doctor">Especialista</label>
+          <select class="form-select" name="doctor" id="doctor">
+            <option value="doctor">Maria del Mar</option>        
+          </select>
+        </div>
+
+      </div>
+
+      <div class="col-sm-4 offset-sm-2 col-md-5 offset-md-1">
+          
+        <div class="form-group">
+            <label for="tipo-cita">Tipo de consulta</label>
+            <select class="form-select" name="tipo-cita" id="tipo-cita">
+              <option value="option1">Opcion 1</option>        
+              <option value="option2">Opcion 2</option>        
+            </select>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="date">Fecha de la cita</label>
+            <input type="text" class="form-control"  name="date" id="datepicker-citas"></p>
+          </div>
+        
+        </div>
+        <div class="d-grid gap-2 container-bts">
+          <button type="submit" class="btn btn-lg btn-success">Agendar cita</button>        
+        </div>
+    
+    </div>
+</div>
+{% put scripts %}
+<script type="text/javascript">      
+    $('#datepicker-citas').datepicker({
+        format: 'mm/dd/yyyy',
+        startDate: '-3d'
+    });   
+
+</script>
+{% endput %}

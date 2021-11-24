@@ -1,0 +1,11 @@
+plugin:
+    name: 'web.patients::lang.plugin.name'
+    description: 'web.patients::lang.plugin.description'
+    author: web
+    icon: oc-icon-child
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Formularios
+        url: web/patients/forms
+        icon: icon-life-ring

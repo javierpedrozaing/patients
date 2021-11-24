@@ -1,0 +1,49 @@
+description = "Default layout"
+
+[session]
+==
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="title" content="{{ this.page.meta_title }}">
+
+        <link rel="icon" href="{{ 'assets/images/favicon.ico'|theme }}">
+        <link rel="stylesheet" href="{{ 'assets/css/app.css'|theme }}">        
+        <link rel="stylesheet" href="{{ 'assets/js/jquery/jquery-ui.min.css' |theme }}">
+        
+        <link rel="stylesheet" href="{{ 'assets/css/global.css'|theme }}">
+        <link rel="stylesheet" href="{{ 'assets/css/forms.css'|theme }}">
+        <link rel="stylesheet" href="{{ 'assets/css/profile.css'|theme }}">
+        <link rel="stylesheet" href="{{ 'assets/css/articles.css'|theme }}">
+        
+      
+        {% styles %}
+        
+        <title>{{ this.page.title }} - {{ this.theme.app_name }}</title>
+    </head>
+    <body class="app layout-{{ this.layout.id }} page-{{ this.page.id }}">
+
+        <div class="app-container">
+
+            <header id="app-header" class="app-header">
+                {% partial 'app/header' %}
+            </header>
+
+            <main id="app-content" class="app-content" role="main">
+                {% partial 'app/content' %}
+            </main>
+
+            <footer id="app-footer" class="app-footer">
+                {% partial 'loadJS' %}
+                {% partial 'app/footer' %}
+            </footer>
+
+        </div>
+        
+  
+    </body>
+
+</html>

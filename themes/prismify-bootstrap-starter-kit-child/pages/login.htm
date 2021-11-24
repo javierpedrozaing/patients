@@ -1,0 +1,45 @@
+url = "/login"
+layout = "default"
+title = "login"
+
+[account]
+redirect = "/"
+==
+
+{{ form_ajax('onSignin') }}
+
+<div class="container-sm login-page">
+    <h3>Iniciar Sesión</h3>
+    <div class="form-group">
+        <label for="userSigninLogin">{{ loginAttributeLabel }}</label>
+        <input
+            name="login"
+            type="text"            
+            class="form-control"
+            id="userSigninLogin"
+            placeholder="Ingresa tu {{ loginAttributeLabel|lower }}" />
+    </div>
+
+    <div class="form-group">
+        <label for="userSigninPassword">Contraseña</label>
+        <input            
+            name="password"
+            type="password"
+            class="form-control"
+            id="userSigninPassword"
+            placeholder="Ingresa tu contraseña" />
+    </div>
+
+    {% if rememberLoginMode == 'ask' %}
+    <div class="form-group">
+        <div class="checkbox">
+        <label><input name="remember" type="checkbox" value="1">Mantener sesión</label>
+        </div>
+    </div>
+    {% endif %}
+    <div class="d-grid gap-2 container-bts">
+        <button type="submit" class="btn btn-lg btn-success">Ingresar</button>        
+    </div>
+    <a href="{{ 'reset-password'|page }}">Restaurar contraseña</a>
+</div>
+{{ form_close() }}

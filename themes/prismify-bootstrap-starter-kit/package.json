@@ -1,0 +1,53 @@
+{
+  "name": "oc-bootstrap-theme",
+  "version": "1.0.6",
+  "description": "Build responsive, mobile-first themes on the web with the world's most popular front-end component library.",
+  "main": "sources/js/app.js",
+  "scripts": {
+    "mix": "mix",
+    "mix:watch": "mix watch",
+    "mix:watch-poll": "mix watch -- --watch-options-poll=1000",
+    "mix:build": "mix --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prismify/oc-bootstrap-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prismify/oc-bootstrap-theme/issues"
+  },
+  "keywords": [
+    "october",
+    "octobercms",
+    "theme",
+    "laravel",
+    "bootstrap"
+  ],
+  "author": {
+    "email": "hello@prismify.org",
+    "name": "Prismify Solutions",
+    "url": "https://prismify.org"
+  },
+  "maintainers": [
+    {
+      "name": "Sergey Sukhorukov",
+      "email": "sergey.sukhorukov@prismify.org",
+      "url": "https://prismify.org"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/prismify/oc-bootstrap-theme",
+  "devDependencies": {
+    "laravel-mix": "^6.0.31",
+    "sass": "^1.42.1",
+    "sass-loader": "12.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.1",
+    "jquery": "^3.6.0",
+    "@popperjs/core": "^2.10.1"
+  },
+  "peerDependencies": {
+    "@popperjs/core": "^2.10.1"
+  }
+}

@@ -1,0 +1,10 @@
+name: Users
+form: $/web/patients/models/user/fields.yaml
+modelClass: web\Patients\Models\User
+defaultRedirect: web/patients/users
+create:
+    redirect: 'web/patients/users/update/:id'
+    redirectClose: web/patients/users
+update:
+    redirect: web/patients/users
+    redirectClose: web/patients/users

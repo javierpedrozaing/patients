@@ -1,0 +1,38 @@
+h1,h2,h3{
+    text-align: center;
+}
+
+
+.app-header {
+    height: 57px;
+}
+
+.login-page, .register-page{
+    margin-top: 110px;
+}
+
+#primary-menu {
+    float: right;
+}
+
+.container-bts {    
+    margin-top: 35px;
+    text-align: center;
+}
+
+ul.navbar-nav li a{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.dropdown-menu .sing-out {
+    cursor: pointer;
+}
+
+.navbar-expand-sm .navbar-nav .dropdown-menu {    
+    margin-left: -76px;
+}
+
+.container .main-content.forms{
+    margin-bottom: 20px;
+}

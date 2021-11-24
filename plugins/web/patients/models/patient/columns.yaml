@@ -1,0 +1,14 @@
+columns:
+    email:
+        label: Email
+        type: text
+        searchable: true
+    cellphone:
+        label: Phone
+        type: text
+    document_type:
+        label: 'Tipo de documento'
+        type: text
+    document:
+        label: Ddocumento
+        type: text

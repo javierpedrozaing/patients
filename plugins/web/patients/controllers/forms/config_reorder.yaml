@@ -1,0 +1,4 @@
+title: Forms
+modelClass: web\Patients\Models\Form
+toolbar:
+    buttons: reorder_toolbar

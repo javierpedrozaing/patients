@@ -1,0 +1,108 @@
+<div class="container forms">
+    <div class="row">
+      <div class="col-sm-3 section-1">
+        <img src="{{'assets/images/logo-form-core-om.jpg' | theme}}" alt="">
+      </div>
+      
+      <div class="col-sm-4 section-2">
+        <div class="form-group">
+            <label for="codigo-centro">Código centro:</label>
+            <input name="codigo-centro" type="text">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="codigo-cliente">Código cliente:</label>
+            <input  class="form-control" name="codigo-cliente" type="text">
+        </div>  
+        <div class="form-group">
+            <label for="codigo-psicoterapeuta">Nombre o código de psicoterapeuta:</label>
+            <input  class="form-control" name="codigo-psicoterapeuta" type="text">
+        </div>
+        <div class="form-group">
+            <label for="date">Fecha</label>
+            <input type="text" class="form-control"  name="date" id="datepicker-form1"></p>
+          </div>
+      </div>
+
+      <div class="col-sm-4 offset-sm-1 section-3">
+        <div class="form-group">
+            <label for="edad">Edad:</label>
+            <input name="edad" type="text">
+        </div>
+        <br>
+        <div class="form-group">
+            <input type="radio" id="hombre" name="genero" value="hombre"
+            >
+            <label for="huey">Hombre</label>
+
+            <input type="radio" id="mujer" name="genero" value="mujer"
+            checked>
+            <label for="huey">Mujer</label>
+        </div>
+        <br>    
+        <div class="form-group">
+            <label for="faseactual">Fase actual:</label>
+            <select class="form-control"  name="faseactual" id="faseactual">
+                <option value="seleccion"><strong>S</strong> Selección</option>
+                <option value="R"><strong>R</strong>  Derivación</option>
+                <option value="A"><strong>A</strong>  Evaluación</option>
+                <option value="F"><strong>F</strong>  Primera sesión de terapia</option>
+                <option value="P"><strong>P</strong>  Pre-terapia</option>
+                <option value="X"><strong>X</strong>  Seguimiento 1</option>      
+                <option value="Y"><strong>Y</strong>  Seguimiento 2</option>      
+            </select>
+          </div>
+          <br>
+        <div class="form-group">
+            <label for="episodio">Episodio de terapia:</label>
+            <input style="width:100px;" name="episodio" type="number">
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="form-description">
+    <p> <strong>IMPORTANTE</strong> FAVOR LEA ESTO ANTES DE EMPEZAR EL TEST. </p>
+    <p>A continuación encontrará 34 frases. Lea cada frase y piense con qué frecuencia usted se ha sentido así <strong>durante los últimos siete días.</strong> Después marque la casilla que mejor lo refleje.</p>   
+</div>
+
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+  {% put scripts %}
+  <script type="text/javascript">      
+
+      $('#datepicker-form1').datepicker({
+          format: 'mm/dd/yyyy',
+          startDate: '-3d'
+      });   
+  </script>
+  {% endput %}

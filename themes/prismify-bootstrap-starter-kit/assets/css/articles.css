@@ -1,0 +1,35 @@
+.main-content.articles {    
+    height: 250px;
+    background-image:  url("../images/background-articles.jpg");
+    background-repeat: no-repeat;        
+    background-size: cover;         
+    
+}
+
+.main-content.forms {
+    height: 250px;
+    background-image:  url("../images/background-forms.jpg");
+    background-repeat: no-repeat;        
+    background-size: cover;         
+    
+}
+
+.main-content .container-text {
+    width: 60%;
+}
+
+.main-content h3 {
+    font-size: 2rem;
+    padding: 40px 0px 30px 50px;
+    display: block;
+    position: relative;
+    text-align: left;
+    color: #FFFFFF;
+    font-weight: bold;    
+}
+
+.main-content p {
+    margin-left:50px;
+    color: #FFFFFF;
+    font-weight: 500;
+}

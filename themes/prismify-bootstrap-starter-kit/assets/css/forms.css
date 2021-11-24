@@ -1,0 +1,20 @@
+.form-description{
+    text-align: center;
+    margin: 20px;
+    padding: 30px 60px;
+    background-color: #D1D2D4;
+}
+
+.container.forms{
+    margin-top: 20px;
+}
+
+.container.forms .section-2, .container.forms .section-3{
+    padding: 10px;
+    background-color: #D1D2D4;
+    margin: 0 5px;
+}
+
+.container.forms .section-2 label, .container.forms .section-3 label{
+    font-weight: bold;
+}

@@ -1,0 +1,47 @@
+description = "App Header"
+==
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">Mis pacientes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse  justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+
+          {% if user %}
+          <li class="nav-item right">
+            <a class="nav-link" href="{{ 'articles'|page }}">Artículos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ 'forms'|page }}">Formularios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ 'mis-citas'|page }}">Solicitar consulta</a>
+          </li>
+          {% endif %}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Mi Cuenta
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                {% if user %}
+                  <li><a class="dropdown-item" href="{{ 'profile'|page }}">Mi Perfíl</a></li>
+                  <li><a class="dropdown-item" href="{{ 'profile'|page }}">Citas agendadas</a></li>
+                  <li><a class="dropdown-item" href="{{ 'update-password'|page }}">Actualizar contraseña</a></li>
+                  <li><a class="dropdown-item sing-out" data-request="onLogout" data-request-data="redirect: '/'">Salir</a></li>
+                {% else %}
+                  <li><a class="dropdown-item" href="{{ 'login'|page }}">Iniciar session</a></li>
+                  <li><a class="dropdown-item" href="{{ 'register'|page }}">Registrarme</a></li>
+                {% endif %}
+              
+              
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

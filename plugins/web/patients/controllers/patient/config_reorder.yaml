@@ -1,0 +1,4 @@
+title: Users
+modelClass: web\Patients\Models\User
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,41 @@
+fields:
+    cellphone:
+        label: Cellphone
+        span: auto
+        type: text
+    birthday:
+        label: Birthday
+        span: auto
+        type: datepicker
+    genre:
+        label: Genre
+        span: auto
+        type: text
+    address:
+        label: Address
+        span: auto
+        type: text
+    user_id:
+        label: 'User id'
+        span: auto
+        type: number
+    age:
+        label: Age
+        span: auto
+        type: number
+    document_type:
+        label: 'Document type'
+        span: auto
+        type: text
+    document:
+        label: Document
+        span: auto
+        type: text
+    country:
+        label: Country
+        span: auto
+        type: text
+    city:
+        label: City
+        span: auto
+        type: text
