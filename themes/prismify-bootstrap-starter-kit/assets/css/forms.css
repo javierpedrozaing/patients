@@ -18,3 +18,89 @@
 .container.forms .section-2 label, .container.forms .section-3 label{
     font-weight: bold;
 }
+
+.container.forms .section-1 .img-form-core-om{
+    width: 100%;    
+    right: 100px;
+    position: absolute;
+    display: block;
+}
+
+
+
+.form-core-om input[type="checkbox"]{
+    width: 80px;
+    margin: 0 auto;
+}
+
+.form-core-om input[type="text"]{
+    width: 76px;
+    margin-right: 5px;
+}
+
+.form-core-om label{
+    margin: 0 10px;
+}
+
+.score-total{
+    margin: 0 50px;
+}
+
+.score-total .section-1 strong{
+    margin-top: 15px;
+    position: relative;
+    display: block;
+}
+
+.score-total .section-2{
+    display: block;
+}
+
+.score-total .section-2 span{
+    font-size: 12px;
+    display: block;
+}
+
+.score-total .section-2 span.arrow{
+    display: block;
+    text-align: center;
+}
+
+.score-total .section-2 span.arrow .fa-arrow-right{
+    position: relative;
+    bottom: 28px;
+    left: 50px;
+}
+
+.score-total .results input[type="text"]{
+    margin: 5px;
+    width:100px;
+}
+
+.form-edi-3 tr td{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.form-edi-3 .table-2{
+    margin-top: 50px;
+}
+
+.content-btn-save-answers{
+    width: 100%;
+    display: block;
+    
+}
+
+.content-btn-save-answers .save-answers {
+    width: 80%;
+    margin:0 auto;
+    display: block;
+}
+.forms.watoci .section-2{
+    margin-top: 30px;
+}
+
+.forms.watoci label.custom-label{
+    width: 250px;
+}

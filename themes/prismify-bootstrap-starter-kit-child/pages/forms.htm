@@ -13,27 +13,29 @@ title = "Forms"
 <div class="category-menu">
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
-          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+          <a class="nav-link active" id="form-tab-1" data-toggle="tab" href="#form-tabs-1" role="tab" aria-controls="form-tabs-1" aria-selected="true">Formulario CORE-OM</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+            <a class="nav-link" id="form-tab-2" data-toggle="tab" href="#form-tabs-2" role="tab" aria-controls="form-tabs-2" aria-selected="false">Formulario EDI-3</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" id="form-tab-3" data-toggle="tab" href="#form-tabs-3" role="tab" aria-controls="form-tabs-3" aria-selected="false">Formulario WATOCI</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-        </li>
+            <a class="nav-link" id="form-tab-4" data-toggle="tab" href="#form-tabs-4" role="tab" aria-controls="form-tabs-4" aria-selected="false">Cuestionario de esquemas</a>
+          </li>
       </ul>
-      <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">  {% partial 'form-core-om' %}</div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">FORMULARIO 2</div>
-        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+      <div class="tab-content" id="myTabContent">        
+        <div class="tab-pane fade show active" id="form-tabs-1" role="tabpanel" aria-labelledby="form-tab-1">  {% partial 'form-core-om' %}</div>        
+        
+        <div class="tab-pane fade" id="form-tabs-2" role="tabpanel" aria-labelledby="form-tab-2">  {% partial 'form-edi-3' %} </div>
+        <div class="tab-pane fade" id="form-tabs-3" role="tabpanel" aria-labelledby="form-tab-3"> {% partial 'form-watoci' %} </div>
+        <div class="tab-pane fade" id="form-tabs-4" role="tabpanel" aria-labelledby="form-tab-4"> {% partial 'esquemas' %}</div>
+        
+        
       </div>
 </div>
 {% put scripts %}
-<script type="text/javascript">      
-    $('#myTab a').on('click', function (e) {        
-        e.preventDefault();
-        $(this).tab('show');        
-    })
 
-</script>
 {% endput %}

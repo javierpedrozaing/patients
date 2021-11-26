@@ -1,10 +1,10 @@
 <div class="container forms">
     <div class="row">
       <div class="col-sm-3 section-1">
-        <img src="{{'assets/images/logo-form-core-om.jpg' | theme}}" alt="">
+        <img class="img-form-core-om" src="{{'assets/images/logo-form-core-om.jpg' | theme}}" alt="">
       </div>
       
-      <div class="col-sm-4 section-2">
+      <div class="col-sm-4  section-2">
         <div class="form-group">
             <label for="codigo-centro">Código centro:</label>
             <input name="codigo-centro" type="text">
@@ -24,7 +24,7 @@
           </div>
       </div>
 
-      <div class="col-sm-4 offset-sm-1 section-3">
+      <div class="col-sm-4 section-3">
         <div class="form-group">
             <label for="edad">Edad:</label>
             <input name="edad" type="text">
@@ -67,36 +67,415 @@
 </div>
 
 
-<table class="table table-striped">
+<table class="table table-striped form-core-om">
     <thead>
       <tr>
         <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
+        <th scope="col">Item</th>
+        <th scope="col">Nunca</th>
+        <th scope="col">Muy pocas veces</th>
+        <th scope="col">Algunas veces</th>
+        <th scope="col">Muchas veces</th>
+        <th scope="col">Siempre o casi siempre</th>
+        <th scope="col">Uso Profesional</th>
+
       </tr>
     </thead>
     <tbody>
       <tr>
         <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
+        <td>Me he sentido muy solo y aislado</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
       </tr>
       <tr>
         <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
+        <td>Me he sentido tenso, ansioso o nervioso</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
       </tr>
       <tr>
         <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
+        <td>He sentido que tenia a alguien en quien apoyarme cuando lo he necesitado</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
       </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>Me he sentido bien conmigo mismo</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">W</label></td>        
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>Me he sentido totalmente sin energía ni entusiasmo</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td>He sido violento físicamente hacia los demás</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">R</label></td>        
+      </tr>
+      <tr>
+        <th scope="row">7</th>
+        <td>Me he sentido capaz de afrontar las cosas cuando han ido mal</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
+      </tr>
+      <tr>
+        <th scope="row">8</th>
+        <td>He tenido molestias, dolores y otros problemas físicos</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
+      </tr>
+      <tr>
+        <th scope="row">9</th>
+        <td>He pensado en hacerme daño a mí mismo</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">R</label></td>        
+      </tr>
+      <tr>
+        <th scope="row">10</th>
+        <td>Me ha costado mucho hablar con la gente</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
+      </tr>
+      <tr>
+        <th scope="row">11</th>
+        <td>La tensión y la ansiedad me han impedido hacer cosas importantes</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
+      </tr>
+      <tr>
+        <th scope="row">12</th>
+        <td>Me he sentido satisfecho con las cosas que he hecho</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
+      </tr>
+      <tr>
+        <th scope="row">13</th>
+        <td>Me han inquietado pensamientos y sentimientos no deseados</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
+      </tr>
+      <tr>
+        <th scope="row">14</th>
+        <td>He tenido ganas de llorar</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">W</label></td>        
+      </tr>
+
+
+      <tr>
+        <th scope="row">15</th>
+        <td>He sentido pánico o terror</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
+      </tr>
+      <tr>
+        <th scope="row">16</th>
+        <td>He hecho planes para acabar con mi vida</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">R</label></td>        
+      </tr>
+      <tr>
+        <th scope="row">17</th>
+        <td>Me he sentido agobiado por mis problemas</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">W</label></td>        
+      </tr>
+      <tr>
+        <th scope="row">18</th>
+        <td>He tenido dificultad para conciliar el sueño o permanecer dormido</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
+      </tr>
+      <tr>
+        <th scope="row">19</th>
+        <td>He sentido afecto o cariño por alguien</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
+      </tr>
+      <tr>
+        <th scope="row">20</th>
+        <td>Me ha sido imposible dejar a un lado mis problemas</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
+      </tr>
+      <tr>
+        <th scope="row">21</th>
+        <td>He sido capaz de hacer la mayoría de las cosas que tenía que hacer</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
+      </tr>
+      <tr>
+        <th scope="row">22</th>
+        <td>He amenazado o intimidado a otra persona</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">R</label></td>        
+      </tr>
+      <tr>
+        <th scope="row">23</th>
+        <td>Me he sentido desesperado o sin esperanza</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
+      </tr>
+      <tr>
+        <th scope="row">24</th>
+        <td>He pensado que sería mejor que estuviera muerto</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">R</label></td>        
+      </tr>
+
+      <tr>
+        <th scope="row">25</th>
+        <td>Me he sentido criticado por los demás</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
+      </tr>
+
+      <tr>
+        <th scope="row">26</th>
+        <td>He pensado que no tengo amigos</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
+      </tr>
+
+      <tr>
+        <th scope="row">27</th>
+        <td>Me he sentido infeliz</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
+      </tr>
+
+      <tr>
+        <th scope="row">28</th>
+        <td>Me han angustiado imágenes o recuerdos no deseados</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
+      </tr>
+
+      <tr>
+        <th scope="row">29</th>
+        <td>Me he sentido irritable cuando estaba con otras personas</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
+      </tr>
+
+      <tr>
+        <th scope="row">30</th>
+        <td>He pensado que yo tengo la culpa de mis problemas y dificultades</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
+      </tr>
+
+      <tr>
+        <th scope="row">31</th>
+        <td>Me he sentido optimista sobre mi futuro</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">W</label></td>        
+      </tr>
+
+      <tr>
+        <th scope="row">32</th>
+        <td>He conseguido las cosas que quería</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
+      </tr>
+
+      <tr>
+        <th scope="row">33</th>
+        <td>Me he sentido humillado o avergonzado por otras personas</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
+      </tr>
+
+      <tr>
+        <th scope="row">34</th>
+        <td>Me he hecho daño físicamente o he puesto en peligro mi salud</td>
+        <td><input type="checkbox" name="nunca" id=""></td>
+        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
+        <td><input type="checkbox" name="algunas_veces" id=""></td>
+        <td><input type="checkbox" name="muchas_veces" id=""></td>
+        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
+        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">R</label></td>        
+      </tr>
+
     </tbody>
   </table>
+  <div class="content-btn-save-answers">
+    <button type="submit" class="btn btn-lg btn-success save-answers">Guardar respuestas</button>    
+  </div>
+<div class="form-description">
+    <strong>GRACIAS POR COMPLETAR ESTE CUESTIONARIO</strong>
+</div>
+
+<div class="score-total">
+    <div class="row">        
+        <div class="col-sm-3 section-1">
+            <p><strong>Puntuación Total -></strong></p>
+            <p><strong>Puntuaciones medias -></strong></p>
+            <p>(Puntuación total en cada apartadodividida entre el número de respuestas completadas en ese apartado)</p>
+        </div>
+        <div class="col-sm-9 section-2">
+            <table class="table  results">
+                <tbody>
+                    <tr>
+                        <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i></span></input></td>
+                        <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i></span></input></td>
+                        <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i></span></input></td>
+                        <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i><i class="fas fa-arrow-right"></i></span></input></td>
+                        <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i></span></input></td>
+                        <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i></span></input></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"><span class="arrow">(W)</span></input></td>
+                        <td><input type="text"><span class="arrow">(P)</span></input></td>
+                        <td><input type="text"><span class="arrow">(F)</span></input></td>
+                        <td><input type="text"><span class="arrow">(R)</span></input></td>
+                        <td><input type="text"><span class="text">Todos los items</span></input></td>
+                        <td><input type="text"><span class="text">Todos menos R</span></input></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
   {% put scripts %}
   <script type="text/javascript">      
 
