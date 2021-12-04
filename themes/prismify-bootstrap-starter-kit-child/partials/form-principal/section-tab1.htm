@@ -1,0 +1,100 @@
+<div class="row section-tab1">
+    <div class="sm-6">
+        <label for="date">Fecha y Hora</label>
+        <input type="date" name="date-hour" id="">
+    </div>
+    <div class="sm-6">
+        <label for="terms-conditions"> Términos y condiciones </label>
+            <textarea readonly class="form-control" name="terms-conditions" id="" cols="100" rows="5">Doy mi consentimiento para la recopilación, uso, retención, transferencia, y procesamiento de mis datos personales para realización de mis alimentos y plan personalizado.  Doy el consentimiento de que los resultados obtenidos  en esta encuesta, pueden ser utilizados con fines académicos para  publicaciones en revistas científicas o simposios, siempre y cuando, no se incluya información  que pueda revelar mi identidad. Declaro que los datos son reales, verificables y comprobables, de hecho autorizo su comprobación.</textarea>
+    </div>
+    <div class="sm-6">        
+        <input type="checkbox" name="accept-terms-and-conditions"  id="">
+        <label for="accept-terms-and-conditions">Aceptar términos y condiciones</label>
+    </div>
+    <div class="sm-6">
+        <div class="content-sign">
+            <label>Firma cliente: </label>
+            <div id="sign-customer" class="field-custom" ></div>
+            <input type="text" hidden name="customer_sign" value="">
+            <img id="saveimg-sign-customer"  alt="" style="display: none; border: 1px solid #ccc" />
+            <div id="clear">Limpiar</div>
+        </div>
+    </div>
+    
+    <div class="sm-6">
+        <label for="names">Nombres completos: </label><br>
+        <input type="text" name="name" placeholder="name">
+        <input type="text" name="lastName" placeholder="lastName">
+    </div>
+    <div class="sm-6">
+        <label for="document">Cédula de ciudadanía: </label>
+        <input type="text" name="document">
+    </div>
+    <div class="sm-6">
+        <label for="document">Email: </label>
+        <input type="text" name="email">
+    </div>
+    <div class="sm-6">
+        <label for="document">Celular: </label>
+        <input type="text" name="cellphone">
+    </div>
+    <div class="sm-6">
+        <label for="date-birthday">Fecha de cunpleaños</label>
+        <input  type="date" name="date-birthday" id="">
+    </div>
+    <div class="sm-6">
+        <label for="genre"> Sexo: </label> <br>
+        <input type="radio" name="genre" value="masculino" ><span for="masculino"> Masculino</span>
+        <br>        
+        <input type="radio" name="genre" value="femenino"><span for="femenino"> Femenino</span>
+    </div>
+    <div class="sm-6">
+        <label for="address-details">Indicaciones casa/Apto/Edificio</label>
+        <input class="form-control" type="text" name="address-details" placeholder="">
+    </div>
+    <div class="sm-6">
+        <label for="city">Ciudad: </label>
+        <input class="form-control" type="text" name="city" placeholder="city">
+    </div>
+    <div class="sm-6">
+        <label for="department">Departamento</label>
+        <input class="form-control" type="text" name="department" placeholder="department">
+    </div>
+
+    <div class="sm-6">
+        <label for="department">País</label>
+        <select class="form-control" name="country" id="">
+            <option value="spain">España</option>
+            <option value="colombia">Colombia</option>
+        </select>
+    </div>
+    <div class="sm-6">
+        <label for="tiempo-laboral">La mayor parte del tiempo laboral usted esta?</label><br>
+        <input type="radio" name="tiempo-laboral" id=""><span> Sentando</span>
+        <input type="radio" name="tiempo-laboral" id=""><span> De pie</span>
+        <input type="radio" name="tiempo-laboral" id=""><span> En movimiento</span>        
+    </div>
+    <div class="sm-6">
+        <label for="civil-state">Estado civil</label><br>
+        <input type="radio" name="civil-state" id=""><span> Soltero</span>
+        <input type="radio" name="civil-state" id=""><span> Casado</span>
+        <input type="radio" name="civil-state" id=""><span> Union Libre</span> 
+        <input type="radio" name="civil-state" id=""><span> Viudo</span>
+        <input type="radio" name="civil-state" id=""><span> Divorsiado</span>        
+    </div>
+    
+</div>
+
+<div id="signatureJSONCUSTOMER" hidden>
+</div>
+
+{% put scripts %}
+<script type="text/javascript">      
+        // sign field
+        var sig = $('#sign-customer').jqSignature();
+        //$('#sign-customer').signature('option', 'syncFormat', syncFormat);
+   
+
+        // sign field
+</script>
+{% endput %}

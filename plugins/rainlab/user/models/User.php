@@ -34,9 +34,26 @@ class User extends UserBase
      * @var array Relations
      */
     public $belongsToMany = [
-        'groups' => [UserGroup::class, 'table' => 'users_groups']
+        'groups' => [UserGroup::class, 'table' => 'users_groups'],
+        'forms' => [
+            'Web\Patients\Models\Form',
+            'table'     => 'web_patients_form_patient',
+            'key'       => 'patient_id',
+            'otherKey'  => 'form_id'
+        ],
+        'posts' => [
+            'RainLab\Blog\Models\Post',
+            'table'     => 'web_patients_post_patient',
+            'key'       => 'patient_id',
+            'otherKey'  => 'post_id'
+        ]
     ];
 
+    public $hasOne = [
+        'patient' => [\Web\Patients\Models\Patient::class, 'key' => 'user_id']
+    ];
+
+  
     public $attachOne = [
         'avatar' => \System\Models\File::class
     ];

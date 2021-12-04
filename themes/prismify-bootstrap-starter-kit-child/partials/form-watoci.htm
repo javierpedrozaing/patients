@@ -1,522 +1,524 @@
-<div class="container forms watoci">
-    <div class="row">
-        <div class="title-form">
-            <h2>Inventario de Alianza Terapéutica y Teoría del Cambio (WATOCI)</h2>  
-            <h4>(C) 1999 Barry Duncan and Scott D. Miller</h4>
-        </div>
-        <div class="col-sm-3">
-        </div>
-        <div class="col-sm-6 section-2">
-            
-            <div class="form-group">
-                <label class="custom-label" for="cliente">Cliente:</label>
-                <input  class="" name="cliente" type="text">
-            </div>  
+<form action="save-form-watoci" method="post">
+  <div class="container forms watoci">
+      <div class="row">
+          <div class="title-form">
+              <h2>Inventario de Alianza Terapéutica y Teoría del Cambio (WATOCI)</h2>  
+              <h4>(C) 1999 Barry Duncan and Scott D. Miller</h4>
+          </div>
+          <div class="col-sm-3">
+          </div>
+          <div class="col-sm-6 section-2">
+              
+              <div class="form-group">
+                  <label class="custom-label" for="cliente">Cliente:</label>
+                  <input  class="" name="cliente" type="text">
+              </div>  
 
-            <div class="form-group">
-                <label  class="custom-label" for="terapeuta">Terapeuta:</label>
-                <select name="terapeuta" id="">
-                    <option value="maria-del-mar">Maria del Mar</option>
-                </select>
-                
-            </div>
-            <div class="form-group">
-                <label  class="custom-label" for="sesion">Sesión N°:</label>
-                <input  class="" name="sesion" type="text">
-            </div>
+              <div class="form-group">
+                  <label  class="custom-label" for="terapeuta">Terapeuta:</label>
+                  <select class="select-terapeuta" name="terapeuta" id="">
+                      <option value="maria-del-mar">Maria del Mar</option>
+                  </select>
+                  
+              </div>
+              <div class="form-group">
+                  <label  class="custom-label" for="sesion">Sesión N°:</label>
+                  <input  class="" name="sesion" type="text">
+              </div>
 
-            <div class="form-group">
-                <label  class="custom-label" for="date">Fecha de la sesión</label>
-                <input type="text" class=""  name="date" id="datepicker-form-watoci"></p>
-            </div>
-        </div>
-        <div class="col-sm-3">
-        </div>
+              <div class="form-group">
+                  <label  class="custom-label" for="date">Fecha de la sesión</label>
+                  <input type="text" class=""  name="date" id="datepicker-form-watoci"></p>
+              </div>
+          </div>
+          <div class="col-sm-3">
+          </div>
 
-        <div class="section-1 form-description">
-            Por favor, evalúe la <strong>sesión de hoy</strong> según estas afirmaciones. Rodee con un círculo la puntuación que mejor describa su opinión usando el sistema siguiente:
-        </div>
-    </div>
-</div>
-
-
-<table class="table table-striped form-core-om">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Item</th>
-        <th scope="col">Nunca</th>
-        <th scope="col">Muy pocas veces</th>
-        <th scope="col">En Ocaciones</th>
-        <th scope="col">Punto medio</th>
-        <th scope="col">Bastante a menudo</th>
-        <th scope="col">Casi siempre</th>
-        <th scope="col">Siempre</th>
-        <th scope="col"></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Me he sentido muy solo y aislado</td>
-        <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">7</label></td>        
-        <td><span> -- </span></td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Me he sentido tenso, ansioso o nervioso</td>
-        <td><input type="radio" name="item-2" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-2" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-2" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-2" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-2" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-2" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-2" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>He sentido que tenia a alguien en quien apoyarme cuando lo he necesitado</td>
-         <td><input type="radio" name="item-3" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-3" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-3" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-3" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-3" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-3" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-3" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td>Me he sentido bien conmigo mismo</td>
-         <td><input type="radio" name="item-4" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-4" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-4" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-4" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-4" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-4" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-4" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-      <tr>
-        <th scope="row">5</th>
-        <td>Me he sentido totalmente sin energía ni entusiasmo</td>
-         <td><input type="radio" name="item-5" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-5" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-5" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-5" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-5" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-5" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-5" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-      <tr>
-        <th scope="row">6</th>
-        <td>He sido violento físicamente hacia los demás</td>
-         <td><input type="radio" name="item-6" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-6" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-6" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-6" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-6" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-6" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-6" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-      <tr>
-        <th scope="row">7</th>
-        <td>Me he sentido capaz de afrontar las cosas cuando han ido mal</td>
-         <td><input type="radio" name="item-7" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-7" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-7" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-7" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-7" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-7" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-7" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-      <tr>
-        <th scope="row">8</th>
-        <td>He tenido molestias, dolores y otros problemas físicos</td>
-         <td><input type="radio" name="item-8" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-8" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-8" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-8" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-8" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-8" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-8" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-      <tr>
-        <th scope="row">9</th>
-        <td>He pensado en hacerme daño a mí mismo</td>
-         <td><input type="radio" name="item-9" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-9" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-9" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-9" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-9" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-9" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-9" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-      <tr>
-        <th scope="row">10</th>
-        <td>Me ha costado mucho hablar con la gente</td>
-         <td><input type="radio" name="item-10" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-10" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-10" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-10" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-10" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-10" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-10" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-      <tr>
-        <th scope="row">11</th>
-        <td>La tensión y la ansiedad me han impedido hacer cosas importantes</td>
-         <td><input type="radio" name="item-11" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-11" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-11" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-11" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-11" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-11" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-11" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-      <tr>
-        <th scope="row">12</th>
-        <td>Me he sentido satisfecho con las cosas que he hecho</td>
-         <td><input type="radio" name="item-12" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-12" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-12" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-12" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-12" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-12" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-12" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-      <tr>
-        <th scope="row">13</th>
-        <td>Me han inquietado pensamientos y sentimientos no deseados</td>
-         <td><input type="radio" name="item-13" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-13" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-13" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-13" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-13" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-13" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-13" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-      <tr>
-        <th scope="row">14</th>
-        <td>He tenido ganas de llorar</td>
-         <td><input type="radio" name="item-14" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-14" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-14" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-14" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-14" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-14" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-14" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-
-
-      <tr>
-        <th scope="row">15</th>
-        <td>He sentido pánico o terror</td>
-         <td><input type="radio" name="item-15" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-15" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-15" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-15" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-15" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-15" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-15" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-      <tr>
-        <th scope="row">16</th>
-        <td>He hecho planes para acabar con mi vida</td>
-         <td><input type="radio" name="item-16" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-16" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-16" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-16" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-16" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-16" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-16" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-      <tr>
-        <th scope="row">17</th>
-        <td>Me he sentido agobiado por mis problemas</td>
-         <td><input type="radio" name="item-17" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-17" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-17" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-17" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-17" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-17" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-17" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-      <tr>
-        <th scope="row">18</th>
-        <td>He tenido dificultad para conciliar el sueño o permanecer dormido</td>
-         <td><input type="radio" name="item-18" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-18" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-18" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-18" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-18" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-18" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-18" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-      <tr>
-        <th scope="row">19</th>
-        <td>He sentido afecto o cariño por alguien</td>
-         <td><input type="radio" name="item-19" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-19" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-19" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-19" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-19" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-19" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-19" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-      <tr>
-        <th scope="row">20</th>
-        <td>Me ha sido imposible dejar a un lado mis problemas</td>
-         <td><input type="radio" name="item-20" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-20" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-20" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-20" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-20" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-20" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-20" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-      <tr>
-        <th scope="row">21</th>
-        <td>He sido capaz de hacer la mayoría de las cosas que tenía que hacer</td>
-         <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-      <tr>
-        <th scope="row">22</th>
-        <td>He amenazado o intimidado a otra persona</td>
-         <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-      <tr>
-        <th scope="row">23</th>
-        <td>Me he sentido desesperado o sin esperanza</td>
-         <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-      <tr>
-        <th scope="row">24</th>
-        <td>He pensado que sería mejor que estuviera muerto</td>
-         <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-
-      <tr>
-        <th scope="row">25</th>
-        <td>Me he sentido criticado por los demás</td>
-         <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-
-      <tr>
-        <th scope="row">26</th>
-        <td>He pensado que no tengo amigos</td>
-         <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-
-      <tr>
-        <th scope="row">27</th>
-        <td>Me he sentido infeliz</td>
-         <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-
-      <tr>
-        <th scope="row">28</th>
-        <td>Me han angustiado imágenes o recuerdos no deseados</td>
-         <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-
-      <tr>
-        <th scope="row">29</th>
-        <td>Me he sentido irritable cuando estaba con otras personas</td>
-         <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-
-      <tr>
-        <th scope="row">30</th>
-        <td>He pensado que yo tengo la culpa de mis problemas y dificultades</td>
-         <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-
-      <tr>
-        <th scope="row">31</th>
-        <td>Me he sentido optimista sobre mi futuro</td>
-         <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-
-      <tr>
-        <th scope="row">32</th>
-        <td>He conseguido las cosas que quería</td>
-         <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-
-      <tr>
-        <th scope="row">33</th>
-        <td>Me he sentido humillado o avergonzado por otras personas</td>
-         <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-
-      <tr>
-        <th scope="row">34</th>
-        <td>Me he hecho daño físicamente o he puesto en peligro mi salud</td>
-         <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
-        <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
-        <td><span> -- </span></td>
-      </tr>
-
-    </tbody>
-  </table>
-  <div class="content-btn-save-answers">
-    <button type="submit" class="btn btn-lg btn-success save-answers">Guardar respuestas</button>    
+          <div class="section-1 form-description">
+              Por favor, evalúe la <strong>sesión de hoy</strong> según estas afirmaciones. Rodee con un círculo la puntuación que mejor describa su opinión usando el sistema siguiente:
+          </div>
+      </div>
   </div>
-<div class="form-description">
-    <strong>GRACIAS POR COMPLETAR ESTE CUESTIONARIO</strong>
-</div>
 
-<div class="score-total">
-    <div class="row">        
-        <div class="col-sm-3 section-1">
-            <p><strong>Puntuación Total -></strong></p>
-            <p><strong>Puntuaciones medias -></strong></p>
-            <p>(Puntuación total en cada apartadodividida entre el número de respuestas completadas en ese apartado)</p>
-        </div>
-        <div class="col-sm-9 section-2">
-            <table class="table  results">
-                <tbody>
-                    <tr>
-                        <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i></span></input></td>
-                        <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i></span></input></td>
-                        <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i></span></input></td>
-                        <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i><i class="fas fa-arrow-right"></i></span></input></td>
-                        <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i></span></input></td>
-                        <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i></span></input></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text"><span class="arrow">(W)</span></input></td>
-                        <td><input type="text"><span class="arrow">(P)</span></input></td>
-                        <td><input type="text"><span class="arrow">(F)</span></input></td>
-                        <td><input type="text"><span class="arrow">(R)</span></input></td>
-                        <td><input type="text"><span class="text">Todos los items</span></input></td>
-                        <td><input type="text"><span class="text">Todos menos R</span></input></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+
+  <table class="table table-striped form-core-om">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Item</th>
+          <th scope="col">Nunca</th>
+          <th scope="col">Muy pocas veces</th>
+          <th scope="col">En Ocaciones</th>
+          <th scope="col">Punto medio</th>
+          <th scope="col">Bastante a menudo</th>
+          <th scope="col">Casi siempre</th>
+          <th scope="col">Siempre</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Me he sentido muy solo y aislado</td>
+          <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">7</label></td>        
+          <td><span> -- </span></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Me he sentido tenso, ansioso o nervioso</td>
+          <td><input type="radio" name="item-2" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-2" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-2" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-2" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-2" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-2" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-2" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>He sentido que tenia a alguien en quien apoyarme cuando lo he necesitado</td>
+          <td><input type="radio" name="item-3" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-3" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-3" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-3" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-3" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-3" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-3" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Me he sentido bien conmigo mismo</td>
+          <td><input type="radio" name="item-4" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-4" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-4" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-4" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-4" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-4" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-4" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Me he sentido totalmente sin energía ni entusiasmo</td>
+          <td><input type="radio" name="item-5" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-5" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-5" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-5" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-5" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-5" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-5" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>He sido violento físicamente hacia los demás</td>
+          <td><input type="radio" name="item-6" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-6" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-6" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-6" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-6" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-6" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-6" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>Me he sentido capaz de afrontar las cosas cuando han ido mal</td>
+          <td><input type="radio" name="item-7" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-7" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-7" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-7" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-7" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-7" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-7" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+        <tr>
+          <th scope="row">8</th>
+          <td>He tenido molestias, dolores y otros problemas físicos</td>
+          <td><input type="radio" name="item-8" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-8" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-8" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-8" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-8" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-8" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-8" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+        <tr>
+          <th scope="row">9</th>
+          <td>He pensado en hacerme daño a mí mismo</td>
+          <td><input type="radio" name="item-9" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-9" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-9" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-9" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-9" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-9" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-9" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+        <tr>
+          <th scope="row">10</th>
+          <td>Me ha costado mucho hablar con la gente</td>
+          <td><input type="radio" name="item-10" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-10" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-10" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-10" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-10" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-10" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-10" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+        <tr>
+          <th scope="row">11</th>
+          <td>La tensión y la ansiedad me han impedido hacer cosas importantes</td>
+          <td><input type="radio" name="item-11" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-11" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-11" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-11" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-11" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-11" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-11" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+        <tr>
+          <th scope="row">12</th>
+          <td>Me he sentido satisfecho con las cosas que he hecho</td>
+          <td><input type="radio" name="item-12" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-12" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-12" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-12" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-12" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-12" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-12" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+        <tr>
+          <th scope="row">13</th>
+          <td>Me han inquietado pensamientos y sentimientos no deseados</td>
+          <td><input type="radio" name="item-13" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-13" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-13" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-13" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-13" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-13" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-13" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+        <tr>
+          <th scope="row">14</th>
+          <td>He tenido ganas de llorar</td>
+          <td><input type="radio" name="item-14" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-14" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-14" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-14" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-14" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-14" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-14" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+
+
+        <tr>
+          <th scope="row">15</th>
+          <td>He sentido pánico o terror</td>
+          <td><input type="radio" name="item-15" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-15" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-15" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-15" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-15" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-15" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-15" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+        <tr>
+          <th scope="row">16</th>
+          <td>He hecho planes para acabar con mi vida</td>
+          <td><input type="radio" name="item-16" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-16" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-16" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-16" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-16" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-16" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-16" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+        <tr>
+          <th scope="row">17</th>
+          <td>Me he sentido agobiado por mis problemas</td>
+          <td><input type="radio" name="item-17" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-17" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-17" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-17" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-17" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-17" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-17" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+        <tr>
+          <th scope="row">18</th>
+          <td>He tenido dificultad para conciliar el sueño o permanecer dormido</td>
+          <td><input type="radio" name="item-18" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-18" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-18" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-18" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-18" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-18" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-18" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+        <tr>
+          <th scope="row">19</th>
+          <td>He sentido afecto o cariño por alguien</td>
+          <td><input type="radio" name="item-19" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-19" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-19" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-19" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-19" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-19" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-19" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+        <tr>
+          <th scope="row">20</th>
+          <td>Me ha sido imposible dejar a un lado mis problemas</td>
+          <td><input type="radio" name="item-20" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-20" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-20" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-20" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-20" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-20" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-20" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+        <tr>
+          <th scope="row">21</th>
+          <td>He sido capaz de hacer la mayoría de las cosas que tenía que hacer</td>
+          <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+        <tr>
+          <th scope="row">22</th>
+          <td>He amenazado o intimidado a otra persona</td>
+          <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+        <tr>
+          <th scope="row">23</th>
+          <td>Me he sentido desesperado o sin esperanza</td>
+          <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+        <tr>
+          <th scope="row">24</th>
+          <td>He pensado que sería mejor que estuviera muerto</td>
+          <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+
+        <tr>
+          <th scope="row">25</th>
+          <td>Me he sentido criticado por los demás</td>
+          <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+
+        <tr>
+          <th scope="row">26</th>
+          <td>He pensado que no tengo amigos</td>
+          <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+
+        <tr>
+          <th scope="row">27</th>
+          <td>Me he sentido infeliz</td>
+          <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+
+        <tr>
+          <th scope="row">28</th>
+          <td>Me han angustiado imágenes o recuerdos no deseados</td>
+          <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+
+        <tr>
+          <th scope="row">29</th>
+          <td>Me he sentido irritable cuando estaba con otras personas</td>
+          <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+
+        <tr>
+          <th scope="row">30</th>
+          <td>He pensado que yo tengo la culpa de mis problemas y dificultades</td>
+          <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+
+        <tr>
+          <th scope="row">31</th>
+          <td>Me he sentido optimista sobre mi futuro</td>
+          <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+
+        <tr>
+          <th scope="row">32</th>
+          <td>He conseguido las cosas que quería</td>
+          <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+
+        <tr>
+          <th scope="row">33</th>
+          <td>Me he sentido humillado o avergonzado por otras personas</td>
+          <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+
+        <tr>
+          <th scope="row">34</th>
+          <td>Me he hecho daño físicamente o he puesto en peligro mi salud</td>
+          <td><input type="radio" name="item-1" id=""><label for="">1</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">2</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">3</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">4</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">5</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">6</label></td>
+          <td><input type="radio" name="item-1" id=""><label for="">7</label></td> 
+          <td><span> -- </span></td>
+        </tr>
+
+      </tbody>
+    </table>
+    <div class="content-btn-save-answers">
+      <button type="submit" class="btn btn-lg btn-success save-answers">Guardar respuestas</button>    
     </div>
-</div>
+  <div class="form-description">
+      <strong>GRACIAS POR COMPLETAR ESTE CUESTIONARIO</strong>
+  </div>
+
+  <div class="score-total" style="display: none;">
+      <div class="row">        
+          <div class="col-sm-3 section-1">
+              <p><strong>Puntuación Total -></strong></p>
+              <p><strong>Puntuaciones medias -></strong></p>
+              <p>(Puntuación total en cada apartadodividida entre el número de respuestas completadas en ese apartado)</p>
+          </div>
+          <div class="col-sm-9 section-2">
+              <table class="table  results">
+                  <tbody>
+                      <tr>
+                          <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i></span></input></td>
+                          <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i></span></input></td>
+                          <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i></span></input></td>
+                          <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i><i class="fas fa-arrow-right"></i></span></input></td>
+                          <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i></span></input></td>
+                          <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i></span></input></td>
+                      </tr>
+                      <tr>
+                          <td><input type="text"><span class="arrow">(W)</span></input></td>
+                          <td><input type="text"><span class="arrow">(P)</span></input></td>
+                          <td><input type="text"><span class="arrow">(F)</span></input></td>
+                          <td><input type="text"><span class="arrow">(R)</span></input></td>
+                          <td><input type="text"><span class="text">Todos los items</span></input></td>
+                          <td><input type="text"><span class="text">Todos menos R</span></input></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  </div>
+</form>
 
   {% put scripts %}
   <script type="text/javascript">      

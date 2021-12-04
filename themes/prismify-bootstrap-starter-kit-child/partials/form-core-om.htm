@@ -1,480 +1,482 @@
-<div class="container forms">
-    <div class="row">
-      <div class="col-sm-3 section-1">
-        <img class="img-form-core-om" src="{{'assets/images/logo-form-core-om.jpg' | theme}}" alt="">
-      </div>
-      
-      <div class="col-sm-4  section-2">
-        <div class="form-group">
-            <label for="codigo-centro">Código centro:</label>
-            <input name="codigo-centro" type="text">
+<form action="save-form-om" method="post">
+  <div class="container forms">
+      <div class="row">
+        <div class="col-sm-3 section-1">
+          <img class="img-form-core-om" src="{{'assets/images/logo-form-core-om.jpg' | theme}}" alt="">
         </div>
-        <br>
-        <div class="form-group">
-            <label for="codigo-cliente">Código cliente:</label>
-            <input  class="form-control" name="codigo-cliente" type="text">
-        </div>  
-        <div class="form-group">
-            <label for="codigo-psicoterapeuta">Nombre o código de psicoterapeuta:</label>
-            <input  class="form-control" name="codigo-psicoterapeuta" type="text">
-        </div>
-        <div class="form-group">
-            <label for="date">Fecha</label>
-            <input type="text" class="form-control"  name="date" id="datepicker-form1"></p>
-          </div>
-      </div>
-
-      <div class="col-sm-4 section-3">
-        <div class="form-group">
-            <label for="edad">Edad:</label>
-            <input name="edad" type="text">
-        </div>
-        <br>
-        <div class="form-group">
-            <input type="radio" id="hombre" name="genero" value="hombre"
-            >
-            <label for="huey">Hombre</label>
-
-            <input type="radio" id="mujer" name="genero" value="mujer"
-            checked>
-            <label for="huey">Mujer</label>
-        </div>
-        <br>    
-        <div class="form-group">
-            <label for="faseactual">Fase actual:</label>
-            <select class="form-control"  name="faseactual" id="faseactual">
-                <option value="seleccion"><strong>S</strong> Selección</option>
-                <option value="R"><strong>R</strong>  Derivación</option>
-                <option value="A"><strong>A</strong>  Evaluación</option>
-                <option value="F"><strong>F</strong>  Primera sesión de terapia</option>
-                <option value="P"><strong>P</strong>  Pre-terapia</option>
-                <option value="X"><strong>X</strong>  Seguimiento 1</option>      
-                <option value="Y"><strong>Y</strong>  Seguimiento 2</option>      
-            </select>
+        
+        <div class="col-sm-4  section-2">
+          <div class="form-group">
+              <label for="codigo-centro">Código centro:</label>
+              <input name="codigo-centro" type="text">
           </div>
           <br>
-        <div class="form-group">
-            <label for="episodio">Episodio de terapia:</label>
-            <input style="width:100px;" name="episodio" type="number">
+          <div class="form-group">
+              <label for="codigo-cliente">Código cliente:</label>
+              <input  class="form-control" name="codigo-cliente" type="text">
+          </div>  
+          <div class="form-group">
+              <label for="codigo-psicoterapeuta">Nombre o código de psicoterapeuta:</label>
+              <input  class="form-control" name="codigo-psicoterapeuta" type="text">
+          </div>
+          <div class="form-group">
+              <label for="date">Fecha</label>
+              <input type="text" class="form-control"  name="date" id="datepicker-form1"></p>
+            </div>
+        </div>
+
+        <div class="col-sm-4 section-3">
+          <div class="form-group">
+              <label for="edad">Edad:</label>
+              <input name="edad" type="text">
+          </div>
+          <br>
+          <div class="form-group">
+              <input type="radio" id="hombre" name="genero" value="hombre"
+              >
+              <label for="huey">Hombre</label>
+
+              <input type="radio" id="mujer" name="genero" value="mujer"
+              checked>
+              <label for="huey">Mujer</label>
+          </div>
+          <br>    
+          <div class="form-group">
+              <label for="faseactual">Fase actual:</label>
+              <select class="form-control"  name="faseactual" id="faseactual">
+                  <option value="seleccion"><strong>S</strong> Selección</option>
+                  <option value="R"><strong>R</strong>  Derivación</option>
+                  <option value="A"><strong>A</strong>  Evaluación</option>
+                  <option value="F"><strong>F</strong>  Primera sesión de terapia</option>
+                  <option value="P"><strong>P</strong>  Pre-terapia</option>
+                  <option value="X"><strong>X</strong>  Seguimiento 1</option>      
+                  <option value="Y"><strong>Y</strong>  Seguimiento 2</option>      
+              </select>
+            </div>
+            <br>
+          <div class="form-group">
+              <label for="episodio">Episodio de terapia:</label>
+              <input style="width:100px;" name="episodio" type="number">
+          </div>
         </div>
       </div>
-    </div>
-</div>
-
-<div class="form-description">
-    <p> <strong>IMPORTANTE</strong> FAVOR LEA ESTO ANTES DE EMPEZAR EL TEST. </p>
-    <p>A continuación encontrará 34 frases. Lea cada frase y piense con qué frecuencia usted se ha sentido así <strong>durante los últimos siete días.</strong> Después marque la casilla que mejor lo refleje.</p>   
-</div>
-
-
-<table class="table table-striped form-core-om">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Item</th>
-        <th scope="col">Nunca</th>
-        <th scope="col">Muy pocas veces</th>
-        <th scope="col">Algunas veces</th>
-        <th scope="col">Muchas veces</th>
-        <th scope="col">Siempre o casi siempre</th>
-        <th scope="col">Uso Profesional</th>
-
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Me he sentido muy solo y aislado</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Me he sentido tenso, ansioso o nervioso</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>He sentido que tenia a alguien en quien apoyarme cuando lo he necesitado</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td>Me he sentido bien conmigo mismo</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">W</label></td>        
-      </tr>
-      <tr>
-        <th scope="row">5</th>
-        <td>Me he sentido totalmente sin energía ni entusiasmo</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
-      </tr>
-      <tr>
-        <th scope="row">6</th>
-        <td>He sido violento físicamente hacia los demás</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">R</label></td>        
-      </tr>
-      <tr>
-        <th scope="row">7</th>
-        <td>Me he sentido capaz de afrontar las cosas cuando han ido mal</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
-      </tr>
-      <tr>
-        <th scope="row">8</th>
-        <td>He tenido molestias, dolores y otros problemas físicos</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
-      </tr>
-      <tr>
-        <th scope="row">9</th>
-        <td>He pensado en hacerme daño a mí mismo</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">R</label></td>        
-      </tr>
-      <tr>
-        <th scope="row">10</th>
-        <td>Me ha costado mucho hablar con la gente</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
-      </tr>
-      <tr>
-        <th scope="row">11</th>
-        <td>La tensión y la ansiedad me han impedido hacer cosas importantes</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
-      </tr>
-      <tr>
-        <th scope="row">12</th>
-        <td>Me he sentido satisfecho con las cosas que he hecho</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
-      </tr>
-      <tr>
-        <th scope="row">13</th>
-        <td>Me han inquietado pensamientos y sentimientos no deseados</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
-      </tr>
-      <tr>
-        <th scope="row">14</th>
-        <td>He tenido ganas de llorar</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">W</label></td>        
-      </tr>
-
-
-      <tr>
-        <th scope="row">15</th>
-        <td>He sentido pánico o terror</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
-      </tr>
-      <tr>
-        <th scope="row">16</th>
-        <td>He hecho planes para acabar con mi vida</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">R</label></td>        
-      </tr>
-      <tr>
-        <th scope="row">17</th>
-        <td>Me he sentido agobiado por mis problemas</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">W</label></td>        
-      </tr>
-      <tr>
-        <th scope="row">18</th>
-        <td>He tenido dificultad para conciliar el sueño o permanecer dormido</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
-      </tr>
-      <tr>
-        <th scope="row">19</th>
-        <td>He sentido afecto o cariño por alguien</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
-      </tr>
-      <tr>
-        <th scope="row">20</th>
-        <td>Me ha sido imposible dejar a un lado mis problemas</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
-      </tr>
-      <tr>
-        <th scope="row">21</th>
-        <td>He sido capaz de hacer la mayoría de las cosas que tenía que hacer</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
-      </tr>
-      <tr>
-        <th scope="row">22</th>
-        <td>He amenazado o intimidado a otra persona</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">R</label></td>        
-      </tr>
-      <tr>
-        <th scope="row">23</th>
-        <td>Me he sentido desesperado o sin esperanza</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
-      </tr>
-      <tr>
-        <th scope="row">24</th>
-        <td>He pensado que sería mejor que estuviera muerto</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">R</label></td>        
-      </tr>
-
-      <tr>
-        <th scope="row">25</th>
-        <td>Me he sentido criticado por los demás</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
-      </tr>
-
-      <tr>
-        <th scope="row">26</th>
-        <td>He pensado que no tengo amigos</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
-      </tr>
-
-      <tr>
-        <th scope="row">27</th>
-        <td>Me he sentido infeliz</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
-      </tr>
-
-      <tr>
-        <th scope="row">28</th>
-        <td>Me han angustiado imágenes o recuerdos no deseados</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
-      </tr>
-
-      <tr>
-        <th scope="row">29</th>
-        <td>Me he sentido irritable cuando estaba con otras personas</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
-      </tr>
-
-      <tr>
-        <th scope="row">30</th>
-        <td>He pensado que yo tengo la culpa de mis problemas y dificultades</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
-      </tr>
-
-      <tr>
-        <th scope="row">31</th>
-        <td>Me he sentido optimista sobre mi futuro</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">W</label></td>        
-      </tr>
-
-      <tr>
-        <th scope="row">32</th>
-        <td>He conseguido las cosas que quería</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
-      </tr>
-
-      <tr>
-        <th scope="row">33</th>
-        <td>Me he sentido humillado o avergonzado por otras personas</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
-      </tr>
-
-      <tr>
-        <th scope="row">34</th>
-        <td>Me he hecho daño físicamente o he puesto en peligro mi salud</td>
-        <td><input type="checkbox" name="nunca" id=""></td>
-        <td><input type="checkbox" name="muy_pocas_veces" id=""></td>
-        <td><input type="checkbox" name="algunas_veces" id=""></td>
-        <td><input type="checkbox" name="muchas_veces" id=""></td>
-        <td><input type="checkbox" name="siempre_casi_siempre" id=""></td>
-        <td><input type="text" name="uso_profesional" id=""><label for="uso_profesional">R</label></td>        
-      </tr>
-
-    </tbody>
-  </table>
-  <div class="content-btn-save-answers">
-    <button type="submit" class="btn btn-lg btn-success save-answers">Guardar respuestas</button>    
   </div>
-<div class="form-description">
-    <strong>GRACIAS POR COMPLETAR ESTE CUESTIONARIO</strong>
-</div>
 
-<div class="score-total">
-    <div class="row">        
-        <div class="col-sm-3 section-1">
-            <p><strong>Puntuación Total -></strong></p>
-            <p><strong>Puntuaciones medias -></strong></p>
-            <p>(Puntuación total en cada apartadodividida entre el número de respuestas completadas en ese apartado)</p>
-        </div>
-        <div class="col-sm-9 section-2">
-            <table class="table  results">
-                <tbody>
-                    <tr>
-                        <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i></span></input></td>
-                        <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i></span></input></td>
-                        <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i></span></input></td>
-                        <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i><i class="fas fa-arrow-right"></i></span></input></td>
-                        <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i></span></input></td>
-                        <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i></span></input></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text"><span class="arrow">(W)</span></input></td>
-                        <td><input type="text"><span class="arrow">(P)</span></input></td>
-                        <td><input type="text"><span class="arrow">(F)</span></input></td>
-                        <td><input type="text"><span class="arrow">(R)</span></input></td>
-                        <td><input type="text"><span class="text">Todos los items</span></input></td>
-                        <td><input type="text"><span class="text">Todos menos R</span></input></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+  <div class="form-description">
+      <p> <strong>IMPORTANTE</strong> FAVOR LEA ESTO ANTES DE EMPEZAR EL TEST. </p>
+      <p>A continuación encontrará 34 frases. Lea cada frase y piense con qué frecuencia usted se ha sentido así <strong>durante los últimos siete días.</strong> Después marque la casilla que mejor lo refleje.</p>   
+  </div>
+
+
+  <table class="table table-striped form-core-om">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Item</th>
+          <th scope="col">Nunca</th>
+          <th scope="col">Muy pocas veces</th>
+          <th scope="col">Algunas veces</th>
+          <th scope="col">Muchas veces</th>
+          <th scope="col">Siempre o casi siempre</th>
+          <th scope="col">Uso Profesional</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Me he sentido muy solo y aislado</td>
+          <td><input type="radio" name="item-1" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-1" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-1" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-1" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-1" data-name="siempre_o_casi_siempre" id=""></td>
+          <td><input type="text" name="item-1" data-name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Me he sentido tenso, ansioso o nervioso</td>
+          <td><input type="radio" name="item-2" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-2" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-2" data-name="algunas_veces"  id=""></td>
+          <td><input type="radio" name="item-2" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-2" data-name="siempre_o_casi_siempre"  id=""></td>
+          <td><input type="text" name="item-2" data-name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>He sentido que tenia a alguien en quien apoyarme cuando lo he necesitado</td>
+          <td><input type="radio" name="item-3" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-3" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-3" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-3" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-3" data-name="siempre_o_casi_siempre"  id=""></td>
+          <td><input type="text" name="item-3" data-name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Me he sentido bien conmigo mismo</td>
+          <td><input type="radio" name="item-4" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-4" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-4" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-4" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-4" data-name="siempre_o_casi_siempre" id=""></td>
+          <td><input type="text" name="item-4" data-name="uso_profesional" id=""><label for="uso_profesional">W</label></td>        
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Me he sentido totalmente sin energía ni entusiasmo</td>
+          <td><input type="radio" name="item-5" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-5" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-5" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-5" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-5" data-name="siempre_o_casi_siempre" id=""></td>
+          <td><input type="text" name="item-5" data-name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>He sido violento físicamente hacia los demás</td>
+          <td><input type="radio" name="item-6" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-6" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-6" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-6" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-6" data-name="siempre_o_casi_siempre" id=""></td>
+          <td><input type="text" name="item-6" data-name="uso_profesional" id=""><label for="uso_profesional">R</label></td>        
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>Me he sentido capaz de afrontar las cosas cuando han ido mal</td>
+          <td><input type="radio" name="item-7" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-7" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-7" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-7" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-7" data-name="siempre_o_casi_siempre" id=""></td>
+          <td><input type="text" name="item-7" data-name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
+        </tr>
+        <tr>
+          <th scope="row">8</th>
+          <td>He tenido molestias, dolores y otros problemas físicos</td>
+          <td><input type="radio" name="item-8" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-8" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-8" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-8" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-8" data-name="siempre_o_casi_siempre" id=""></td>
+          <td><input type="text" name="item-8"  data-name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
+        </tr>
+        <tr>
+          <th scope="row">9</th>
+          <td>He pensado en hacerme daño a mí mismo</td>
+          <td><input type="radio" name="item-9" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-9" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-9" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-9" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-9" data-name="siempre_o_casi_siempre" id=""></td>
+          <td><input type="text" name="item-9" data-name="uso_profesional" id=""><label for="uso_profesional">R</label></td>        
+        </tr>
+        <tr>
+          <th scope="row">10</th>
+          <td>Me ha costado mucho hablar con la gente</td>
+          <td><input type="radio" name="item-10" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-10" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-10" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-10" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-10" data-name="siempre_o_casi_siempre" id=""></td>
+          <td><input type="text" name="item-10" data-name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
+        </tr>
+        <tr>
+          <th scope="row">11</th>
+          <td>La tensión y la ansiedad me han impedido hacer cosas importantes</td>
+          <td><input type="radio" name="item-11" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-11" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-11" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-11" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-11" data-name="siempre_casi_siempre" id=""></td>
+          <td><input type="text" name="item-11" data-name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
+        </tr>
+        <tr>
+          <th scope="row">12</th>
+          <td>Me he sentido satisfecho con las cosas que he hecho</td>
+          <td><input type="radio" name="item-12" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-12" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-12" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-12" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-12" data-name="siempre_casi_siempre" id=""></td>
+          <td><input type="text" name="item-12" data-name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
+        </tr>
+        <tr>
+          <th scope="row">13</th>
+          <td>Me han inquietado pensamientos y sentimientos no deseados</td>
+          <td><input type="radio" name="item-13" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-13" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-13" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-13" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-13" data-name="siempre_casi_siempre" id=""></td>
+          <td><input type="text" name="item-13" data-name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
+        </tr>
+        <tr>
+          <th scope="row">14</th>
+          <td>He tenido ganas de llorar</td>
+          <td><input type="radio" name="item-14" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-14" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-14" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-14" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-14" data-name="siempre_casi_siempre" id=""></td>
+          <td><input type="text" name="item-14" data-name="uso_profesional" id=""><label for="uso_profesional">W</label></td>        
+        </tr>
+
+
+        <tr>
+          <th scope="row">15</th>
+          <td>He sentido pánico o terror</td>
+          <td><input type="radio" name="item-15" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-15" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-15" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-15" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-15" data-name="siempre_casi_siempre" id=""></td>
+          <td><input type="text" name="item-15" data-name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
+        </tr>
+        <tr>
+          <th scope="row">16</th>
+          <td>He hecho planes para acabar con mi vida</td>
+          <td><input type="radio" name="item-16" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-16" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-16" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-16" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-16" data-name="siempre_casi_siempre" id=""></td>
+          <td><input type="text" name="item-16" data-name="uso_profesional" id=""><label for="uso_profesional">R</label></td>        
+        </tr>
+        <tr>
+          <th scope="row">17</th>
+          <td>Me he sentido agobiado por mis problemas</td>
+          <td><input type="radio" name="item-17" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-17" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-17" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-17" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-17" data-name="siempre_casi_siempre" id=""></td>
+          <td><input type="text" name="item-17" data-name="uso_profesional" id=""><label for="uso_profesional">W</label></td>        
+        </tr>
+        <tr>
+          <th scope="row">18</th>
+          <td>He tenido dificultad para conciliar el sueño o permanecer dormido</td>
+          <td><input type="radio" name="item-18" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-18" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-18" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-18" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-18" data-name="siempre_casi_siempre" id=""></td>
+          <td><input type="text" name="item-18" data-name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
+        </tr>
+        <tr>
+          <th scope="row">19</th>
+          <td>He sentido afecto o cariño por alguien</td>
+          <td><input type="radio" name="item-19" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-19" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-19" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-19" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-19" data-name="siempre_casi_siempre" id=""></td>
+          <td><input type="text" name="item-19" data-name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
+        </tr>
+        <tr>
+          <th scope="row">20</th>
+          <td>Me ha sido imposible dejar a un lado mis problemas</td>
+          <td><input type="radio" name="item-20" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-20" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-20" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-20" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-20" data-name="siempre_casi_siempre" id=""></td>
+          <td><input type="text" name="item-20" data-name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
+        </tr>
+        <tr>
+          <th scope="row">21</th>
+          <td>He sido capaz de hacer la mayoría de las cosas que tenía que hacer</td>
+          <td><input type="radio" name="item-21" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-21" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-21" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-21" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-21" data-name="siempre_casi_siempre" id=""></td>
+          <td><input type="text" name="item-21" data-name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
+        </tr>
+        <tr>
+          <th scope="row">22</th>
+          <td>He amenazado o intimidado a otra persona</td>
+          <td><input type="radio" name="item-22" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-22" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-22" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-22" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-22" data-name="siempre_casi_siempre" id=""></td>
+          <td><input type="text" name="item-22" data-name="uso_profesional" id=""><label for="uso_profesional">R</label></td>        
+        </tr>
+        <tr>
+          <th scope="row">23</th>
+          <td>Me he sentido desesperado o sin esperanza</td>
+          <td><input type="radio" name="item-23" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-23" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-23" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-23" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-23" data-name="siempre_casi_siempre" id=""></td>
+          <td><input type="text" name="item-23" data-name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
+        </tr>
+        <tr>
+          <th scope="row">24</th>
+          <td>He pensado que sería mejor que estuviera muerto</td>
+          <td><input type="radio" name="item-24" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-24" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-24" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-24" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-24" data-name="siempre_casi_siempre" id=""></td>
+          <td><input type="text" name="item-24" data-name="uso_profesional" id=""><label for="uso_profesional">R</label></td>        
+        </tr>
+
+        <tr>
+          <th scope="row">25</th>
+          <td>Me he sentido criticado por los demás</td>
+          <td><input type="radio" name="item-25" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-25" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-25" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-25" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-25" data-name="siempre_casi_siempre" id=""></td>
+          <td><input type="text" name="item-25" data-name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
+        </tr>
+
+        <tr>
+          <th scope="row">26</th>
+          <td>He pensado que no tengo amigos</td>
+          <td><input type="radio" name="item-26" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-26" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-26" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-26" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-26" data-name="siempre_casi_siempre" id=""></td>
+          <td><input type="text" name="item-26" data-name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
+        </tr>
+
+        <tr>
+          <th scope="row">27</th>
+          <td>Me he sentido infeliz</td>
+          <td><input type="radio" name="item-27" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-27" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-27" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-27" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-27" data-name="siempre_casi_siempre" id=""></td>
+          <td><input type="text" name="item-27" data-name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
+        </tr>
+
+        <tr>
+          <th scope="row">28</th>
+          <td>Me han angustiado imágenes o recuerdos no deseados</td>
+          <td><input type="radio" name="item-28" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-28" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-28" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-28" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-28" data-name="siempre_casi_siempre" id=""></td>
+          <td><input type="text" name="item-28" data-name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
+        </tr>
+
+        <tr>
+          <th scope="row">29</th>
+          <td>Me he sentido irritable cuando estaba con otras personas</td>
+          <td><input type="radio" name="item-29" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-29" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-29" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-29" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-29" data-name="siempre_casi_siempre" id=""></td>
+          <td><input type="text" name="item-29" data-name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
+        </tr>
+
+        <tr>
+          <th scope="row">30</th>
+          <td>He pensado que yo tengo la culpa de mis problemas y dificultades</td>
+          <td><input type="radio" name="item-30" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-30" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-30" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-30" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-30" data-name="siempre_casi_siempre" id=""></td>
+          <td><input type="text" name="item-30" data-name="uso_profesional" id=""><label for="uso_profesional">P</label></td>        
+        </tr>
+
+        <tr>
+          <th scope="row">31</th>
+          <td>Me he sentido optimista sobre mi futuro</td>
+          <td><input type="radio" name="item-31" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-31" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-31" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-31" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-31" data-name="siempre_casi_siempre" id=""></td>
+          <td><input type="text" name="item-31" data-name="uso_profesional" id=""><label for="uso_profesional">W</label></td>        
+        </tr>
+
+        <tr>
+          <th scope="row">32</th>
+          <td>He conseguido las cosas que quería</td>
+          <td><input type="radio" name="item-32" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-32" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-32" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-32" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-32" data-name="siempre_casi_siempre" id=""></td>
+          <td><input type="text" name="item-32" data-name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
+        </tr>
+
+        <tr>
+          <th scope="row">33</th>
+          <td>Me he sentido humillado o avergonzado por otras personas</td>
+          <td><input type="radio" name="item-33" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-33" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-33" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-33" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-33" data-name="siempre_casi_siempre" id=""></td>
+          <td><input type="text" name="item-33" data-name="uso_profesional" id=""><label for="uso_profesional">F</label></td>        
+        </tr>
+
+        <tr>
+          <th scope="row">34</th>
+          <td>Me he hecho daño físicamente o he puesto en peligro mi salud</td>
+          <td><input type="radio" name="item-34" data-name="nunca" id=""></td>
+          <td><input type="radio" name="item-34" data-name="muy_pocas_veces" id=""></td>
+          <td><input type="radio" name="item-34" data-name="algunas_veces" id=""></td>
+          <td><input type="radio" name="item-34" data-name="muchas_veces" id=""></td>
+          <td><input type="radio" name="item-34" data-name="siempre_casi_siempre" id=""></td>
+          <td><input type="text" name="item-34" data-name="uso_profesional" id=""><label for="uso_profesional">R</label></td>        
+        </tr>
+
+      </tbody>
+    </table>
+    <div class="content-btn-save-answers">
+      <button type="submit" class="btn btn-lg btn-success save-answers">Guardar respuestas</button>    
     </div>
-</div>
+  <div class="form-description">
+      <strong>GRACIAS POR COMPLETAR ESTE CUESTIONARIO</strong>
+  </div>
+
+  <div class="score-total" style="display: none;">
+      <div class="row">        
+          <div class="col-sm-3 section-1">
+              <p><strong>Puntuación Total -></strong></p>
+              <p><strong>Puntuaciones medias -></strong></p>
+              <p>(Puntuación total en cada apartadodividida entre el número de respuestas completadas en ese apartado)</p>
+          </div>
+          <div class="col-sm-9 section-2">
+              <table class="table  results">
+                  <tbody>
+                      <tr>
+                          <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i></span></input></td>
+                          <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i></span></input></td>
+                          <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i></span></input></td>
+                          <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i><i class="fas fa-arrow-right"></i></span></input></td>
+                          <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i></span></input></td>
+                          <td><input type="text"><span class="arrow"><i class="fas fa-arrow-down"></i></span></input></td>
+                      </tr>
+                      <tr>
+                          <td><input type="text"><span class="arrow">(W)</span></input></td>
+                          <td><input type="text"><span class="arrow">(P)</span></input></td>
+                          <td><input type="text"><span class="arrow">(F)</span></input></td>
+                          <td><input type="text"><span class="arrow">(R)</span></input></td>
+                          <td><input type="text"><span class="text">Todos los items</span></input></td>
+                          <td><input type="text"><span class="text">Todos menos R</span></input></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  </div>
+</form>
 
   {% put scripts %}
   <script type="text/javascript">      

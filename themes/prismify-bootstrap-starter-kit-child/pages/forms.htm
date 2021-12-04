@@ -13,7 +13,10 @@ title = "Forms"
 <div class="category-menu">
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
-          <a class="nav-link active" id="form-tab-1" data-toggle="tab" href="#form-tabs-1" role="tab" aria-controls="form-tabs-1" aria-selected="true">Formulario CORE-OM</a>
+          <a class="nav-link active" id="form-tab-0" data-toggle="tab" href="#form-tabs-0" role="tab" aria-controls="form-tabs-0" aria-selected="true">Formulario principal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="form-tab-1" data-toggle="tab" href="#form-tabs-1" role="tab" aria-controls="form-tabs-1" aria-selected="true">Formulario CORE-OM</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" id="form-tab-2" data-toggle="tab" href="#form-tabs-2" role="tab" aria-controls="form-tabs-2" aria-selected="false">Formulario EDI-3</a>
@@ -27,13 +30,12 @@ title = "Forms"
           </li>
       </ul>
       <div class="tab-content" id="myTabContent">        
-        <div class="tab-pane fade show active" id="form-tabs-1" role="tabpanel" aria-labelledby="form-tab-1">  {% partial 'form-core-om' %}</div>        
-        
+        <div class="tab-pane fade show active" id="form-tabs-0" role="tabpanel" aria-labelledby="form-tab-0">  {% partial 'form-principal' %}</div>
+        <div class="tab-pane fade" id="form-tabs-1" role="tabpanel" aria-labelledby="form-tab-1">  {% partial 'form-core-om' %}</div>
         <div class="tab-pane fade" id="form-tabs-2" role="tabpanel" aria-labelledby="form-tab-2">  {% partial 'form-edi-3' %} </div>
         <div class="tab-pane fade" id="form-tabs-3" role="tabpanel" aria-labelledby="form-tab-3"> {% partial 'form-watoci' %} </div>
         <div class="tab-pane fade" id="form-tabs-4" role="tabpanel" aria-labelledby="form-tab-4"> {% partial 'esquemas' %}</div>
-        
-        
+                
       </div>
 </div>
 {% put scripts %}

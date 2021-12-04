@@ -8,6 +8,16 @@
 .container.forms{
     margin-top: 20px;
 }
+.container.forms.principal .nav-item .nav-link.active{
+    background-color: #1ABC9C;
+    color: honeydew;
+    
+}
+
+.container.forms.principal .nav-item .nav-link{
+    border-radius: 50%;
+    
+}
 
 .container.forms .section-2, .container.forms .section-3{
     padding: 10px;
@@ -21,12 +31,15 @@
 
 .container.forms .section-1 .img-form-core-om{
     width: 100%;    
-    right: 100px;
+    right: 70px;
     position: absolute;
     display: block;
 }
 
-
+.select-terapeuta{
+    width: 186px;
+    height: 34px;
+}
 
 .form-core-om input[type="checkbox"]{
     width: 80px;
@@ -35,7 +48,7 @@
 
 .form-core-om input[type="text"]{
     width: 76px;
-    margin-right: 5px;
+    margin-right: 0px;
 }
 
 .form-core-om label{
@@ -104,3 +117,12 @@
 .forms.watoci label.custom-label{
     width: 250px;
 }
+
+.form-principal label{
+    font-weight: bold;
+}
+
+.form-principal div.sm-6, .form-principal .section-tab1{
+    margin: 10px 0;
+}
+

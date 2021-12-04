@@ -20,4 +20,8 @@ class Form extends Model
      */
     public $rules = [
     ];
+
+    public $belongsToMany = [
+        'users' => \Acme\Blog\Models\User::class
+    ];
 }
