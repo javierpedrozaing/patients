@@ -10,5 +10,5 @@ columns:
         label: 'Tipo de documento'
         type: text
     document:
-        label: Ddocumento
+        label: Documento
         type: text

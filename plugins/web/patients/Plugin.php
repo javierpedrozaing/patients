@@ -4,6 +4,7 @@ use System\Classes\PluginBase;
 use RainLab\User\Models\User as UserModel;
 use RainLab\User\Controllers\Users as UsersController;
 use web\Patients\Models\Patient as PatientModel;
+use web\Patients\Models\Form as FormModel;
 
 class Plugin extends PluginBase
 {
@@ -11,6 +12,18 @@ class Plugin extends PluginBase
     {
         UserModel::extend(function($model){
             $model->hasOne['patient'] = ['Web\Patients\Models\Patient', 'key' => 'user_id'];
+            $model->belongsToMany['forms'] = [
+                'Web\Patients\Models\Form',
+                'table' => 'web_patients_form_patient',
+                'key'=> 'patient_id',   
+                'otherKey' => 'form_id'
+            ];
+            $model->belongsToMany['posts'] = [
+                'RainLab\Blog\Models\Post', 
+                'table' => 'web_patients_post_patient',
+                'key'=> 'patient_id',   
+                'otherKey' => 'post_id'
+            ];
         });
 
         UsersController::extendListColumns(function($list, $model){
@@ -36,7 +49,8 @@ class Plugin extends PluginBase
             }
 
             // ensure taht a profile always exists...
-            PatientModel::getFromUser($model);
+           PatientModel::getFromUser($model);
+           FormModel::getFromUser($model);
 
             $form->addTabFields([
                 'patient[cellphone]' => [
@@ -85,18 +99,21 @@ class Plugin extends PluginBase
                     'tab' => 'Datos paciente',
                     'type' => 'text'
                 ],
-                'patient[forms]' => [
-                    'label' => 'Formularios',
+                'forms' => [
+                    'label' => 'Formularios asignados',
                     'tab' => 'Formularios',
                     'type' => 'relation',
+                    'nameFrom' => 'name'
                 ],
-                'patient[posts]' => [
-                    'label' => 'Artículos',
+                'posts' => [
+                    'label' => 'Artículos asignados',
                     'tab' => 'Artículos',
                     'type' => 'relation',
                     'nameFrom' => 'title'
-                ]
+                ],
+            
             ]);
+
         });
     }
     public function registerComponents()
