@@ -13,7 +13,9 @@
     </div>
     <div class="sm-6">
         <div class="content-sign">
-            <label>Firma cliente: </label>
+            <label>Firma: </label>
+            <div id="bcPaint"></div>
+			
             <div id="sign-customer" class="field-custom" ></div>
             <input type="text" hidden name="customer_sign" value="">
             <img id="saveimg-sign-customer"  alt="" style="display: none; border: 1px solid #ccc" />
@@ -91,7 +93,8 @@
 {% put scripts %}
 <script type="text/javascript">      
         // sign field
-        var sig = $('#sign-customer').jqSignature();
+        $('#bcPaint').bcPaint();
+        //var sig = $('#sign-customer').jqSignature();
         //$('#sign-customer').signature('option', 'syncFormat', syncFormat);
    
 

@@ -126,3 +126,7 @@
     margin: 10px 0;
 }
 
+#bcPaint-palette, #bcPaint-export{
+    display: none;
+}
+
