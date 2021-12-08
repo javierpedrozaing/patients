@@ -5,6 +5,7 @@ use BackendMenu;
 
 class Forms extends Controller
 {
+    public $requiredPermissions = ['web.patients.access_forms'];
     public $implement = [        'Backend\Behaviors\ListController',        'Backend\Behaviors\FormController',        'Backend\Behaviors\ReorderController'    ];
     
     public $listConfig = 'config_list.yaml';

@@ -9,3 +9,5 @@ navigation:
         label: Formularios
         url: web/patients/forms
         icon: icon-life-ring
+        permissions:
+            - web.patients.access_forms

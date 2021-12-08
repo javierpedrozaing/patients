@@ -9,18 +9,18 @@ description = "App Header"
       <div class="collapse navbar-collapse  justify-content-end" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <a class="nav-link {% if this.page.id == 'home' %} active {% endif %}" aria-current="page" href="/">Home</a>
           </li>
 
           {% if user %}
           <li class="nav-item right">
-            <a class="nav-link" href="{{ 'articles'|page }}">Artículos</a>
+            <a class="nav-link  {% if this.page.id == 'articles' %} active {% endif %}" href="{{ 'articles'|page }}">Artículos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ 'forms'|page }}">Formularios</a>
+            <a class="nav-link  {% if this.page.id == 'forms' %} active {% endif %}" href="{{ 'forms'|page }}">Formularios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ 'mis-citas'|page }}">Solicitar consulta</a>
+            <a class="nav-link  {% if this.page.id == 'get-cita' %} active {% endif %}" href="{{ 'mis-citas'|page }}">Solicitar consulta</a>
           </li>
           {% endif %}
           <li class="nav-item dropdown">

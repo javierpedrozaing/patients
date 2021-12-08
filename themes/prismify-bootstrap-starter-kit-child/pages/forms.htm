@@ -1,11 +1,28 @@
 url = "/forms"
 layout = "default"
 title = "Forms"
+id="forms"
+==
+
+<?
+use RainLab\User\Models\User;
+
+function onStart(){
+  $current_user = Auth::getUser();
+  
+  $this['accessToFormEDI3'] = User::find($current_user->id)->forms->where('id', '1')->first();    
+  $this['accessToFormEsquemas'] = User::find($current_user->id)->forms->where('id', '2')->first();
+  $this['accessToFormCoreOm'] = User::find($current_user->id)->forms->where('id', '3')->first();
+  $this['accessToFormWatoci'] = User::find($current_user->id)->forms->where('id', '5')->first();
+  
+}
+?>
 
 ==
+
 <div class="main-content forms">
     <div class="container-text  ">
-        <h3>Formularios</h3>
+        <h3>Formularios</h3>       
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse commodi debitis accusantium aut ducimus aliquid odit iste sint voluptatum suscipit! Minus repellat cum aliquid odit voluptas obcaecati repudiandae officiis totam.</p>
     </div>
 </div>
@@ -15,19 +32,29 @@ title = "Forms"
         <li class="nav-item">
           <a class="nav-link active" id="form-tab-0" data-toggle="tab" href="#form-tabs-0" role="tab" aria-controls="form-tabs-0" aria-selected="true">Formulario principal</a>
         </li>
+        {% if accessToFormCoreOm is not null %}
         <li class="nav-item">
           <a class="nav-link" id="form-tab-1" data-toggle="tab" href="#form-tabs-1" role="tab" aria-controls="form-tabs-1" aria-selected="true">Formulario CORE-OM</a>
         </li>
+        {% endif %}
+
+        {% if accessToFormEDI3 is not null %}
         <li class="nav-item">
             <a class="nav-link" id="form-tab-2" data-toggle="tab" href="#form-tabs-2" role="tab" aria-controls="form-tabs-2" aria-selected="false">Formulario EDI-3</a>
         </li>
-        
+        {% endif %}
+
+        {% if accessToFormWatoci is not null %}
         <li class="nav-item">
           <a class="nav-link" id="form-tab-3" data-toggle="tab" href="#form-tabs-3" role="tab" aria-controls="form-tabs-3" aria-selected="false">Formulario WATOCI</a>
         </li>
+        {% endif %}
+
+        {% if accessToFormEsquemas is not null %}
         <li class="nav-item">
             <a class="nav-link" id="form-tab-4" data-toggle="tab" href="#form-tabs-4" role="tab" aria-controls="form-tabs-4" aria-selected="false">Cuestionario de esquemas</a>
-          </li>
+        </li>
+        {% endif %}
       </ul>
       <div class="tab-content" id="myTabContent">        
         <div class="tab-pane fade show active" id="form-tabs-0" role="tabpanel" aria-labelledby="form-tab-0">  {% partial 'form-principal' %}</div>
