@@ -123,4 +123,16 @@ class Plugin extends PluginBase
     public function registerSettings()
     {
     }
+
+    public function registerPermissions()
+    {
+        return [
+            'web.patients.access_forms' => [
+                'label' => 'Actualizar formularios',
+                'tab' => 'Forms',
+                'order' => 200,
+            ],
+            // ...
+        ];
+    }
 }
