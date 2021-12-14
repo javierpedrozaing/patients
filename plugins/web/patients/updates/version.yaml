@@ -48,3 +48,6 @@
 1.0.17:
     - 'Updated table web_patients_patient'
     - builder_table_update_web_patients_patient_7.php
+1.0.18:
+    - 'Updated table web_patients_patient'
+    - builder_table_update_web_patients_patient_8.php

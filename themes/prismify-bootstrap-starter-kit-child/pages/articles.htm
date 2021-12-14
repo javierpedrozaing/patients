@@ -2,7 +2,25 @@ title = "Articles"
 layout = "default"
 url = "/articles"
 id="articles"
+
 ==
+<?
+use RainLab\Blog\Models\Category;
+use RainLab\Blog\Models\Post;
+use RainLab\User\Models\User;
+use Web\Patients\Classes\Custom;
+
+ function onStart() {
+   
+   $this['categories'] = Category::get();   
+   //$this['modelP'] = Post::find($this->controller->vars['formModel']['id']);
+   $modelP = Post::find(2);
+  
+ }
+
+?>
+==
+
 <div class="main-content articles">
     <div class="container-text">
         <h3>Articulos</h3>
@@ -11,68 +29,66 @@ id="articles"
 </div>
 
 <div class="category-menu">
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" id="form-tab-1" data-toggle="tab" href="#categoria-1" role="tab" aria-controls="categoria-1" aria-selected="true">Categoría 1</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="form-tab-2" data-toggle="tab" href="#categoria-2" role="tab" aria-controls="categoria-2" aria-selected="false">Categoría 2</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link" id="form-tab-3" data-toggle="tab" href="#categoria-3" role="tab" aria-controls="categoria-3" aria-selected="false">Categoría 3</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="form-tab-4" data-toggle="tab" href="#categoria-4" role="tab" aria-controls="categoria-4" aria-selected="false">Categoría 4</a>
+    <ul class="nav nav-tabs" id="articlesTab" role="tablist">
+      {% for category in categories %}
+        {%  if category.id == 1 %}
+          <li class="nav-item">
+            <a class="nav-link active" id="form-tab-1" data-toggle="tab" href="#{{category.slug}}" role="tab" aria-controls="{{category.slug}}" aria-selected="true">{{category.name}}</a>
           </li>
+        {% else %}  
+          <li class="nav-item">
+            <a class="nav-link" id="form-tab{{category.slug|slice(9,10)}}" data-toggle="tab" href="#{{category.slug}}" role="tab" aria-controls="{{category.slug}}" aria-selected="false">{{category.name}}</a>
+          </li>
+        {% endif %}  
+      {% endfor %}
     </ul>
 
-
-      <div class="tab-content" id="myTabContent">        
-        <div class="tab-pane fade show active" id="categoria-1" role="tabpanel" aria-labelledby="form-tab-1">
-            
-        <div class="grid">
-         
-            <div class="grid-item">
-                <h2>Articulo 1</h2>
-            </div>
-         
-            <div class="grid-item"><h2>Articulo 2</h2></div>
+      <div class="tab-content" id="articlesTabContent">    
+        {% for category in categories %}
         
-            <div class="grid-item"><h2>Articulo 3</h2></div>
+          {%  if category.id == 1 %}
+            <div class="tab-pane fade show active" id="{{category.slug}}" role="tabpanel" aria-labelledby="form-tab-1">
+              
+              {% for post in  postsByCategory(category.id) %}
+              {% set image = featuredImageByPost(post.id) %}
+               
+               
+                <div class="grid">
             
-            <div class="grid-item"><h2>Articulo 4</h2></div>
+                  <div class="grid-item" style="background-image: url({{ image.path }})">
+                      <h2>{{post.title}}</h2>
+                      <p class="overlay"></p>
+                      
+                  </div>
+                </div>
+              {% endfor %}
 
-            <div class="grid-item"><h2>Articulo 5</h2></div>
-            
-            <div class="grid-item"><h2>Articulo 6</h2></div>
-
-            <div class="grid-item"><h2>Articulo 7</h2></div>
-            
-            <div class="grid-item"><h2>Articulo 8</h2></div>
-            <div class="grid-item"><h2>Articulo 9</h2></div>
-            
-            <div class="grid-item"><h2>Articulo 10</h2></div>
-            <div class="grid-item"><h2>Articulo 11</h2></div>
-            <div class="grid-item"><h2>Articulo 12</h2></div>
-            
-        </div>
-  
-        </div>                
-        <div class="tab-pane fade" id="categoria-2" role="tabpanel" aria-labelledby="form-tab-2">   </div>
-        <div class="tab-pane fade" id="categoria-3" role="tabpanel" aria-labelledby="form-tab-3">  </div>
-        <div class="tab-pane fade" id="categoria-4" role="tabpanel" aria-labelledby="form-tab-4"> </div>
+            </div>
+          {% else %} 
+            <div class="tab-pane fade" id="{{category.slug}}" role="tabpanel" aria-labelledby="form-tab{{category.slug|slice(9,10)}}"> 
+              {% for post in  postsByCategory(category.id) %}
+                <div class="grid">
+                  <div class="grid-item">
+                      <h2>{{post.title}}</h2>
+                      <p class="overlay"></p>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %} 
+        {% endfor %}
                 
       </div>
 </div>
 
 {% put scripts %}
 <script>
-   $('.grid').masonry({
-  itemSelector: '.grid-item',
-  columnWidth: 300,
-  horizontalOrder: true
-});
+
+  $(document).ready(function() {
+  });
+
+
+  
 
 </script>
 {% endput %}

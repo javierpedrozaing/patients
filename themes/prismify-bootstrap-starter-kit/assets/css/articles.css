@@ -59,12 +59,36 @@
     border: 2px solid #333;
     border-color: #ffffff;
     border-radius: 5px;
+    background-position:center;
+    position: relative;
     
   }
 
+  .grid-item:hover .overlay{
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  .grid-item .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+
   .grid-item  h2 {
-      color:#ffffff;
-      margin-top: 10px;
+      color:#ffffff;      
+      background: #333;
+      font-size: 1.5rem;
+      text-align: center;
+      position: relative;
+      height: auto;
   }
   
   .grid-item--width2 { width: 320px; }
