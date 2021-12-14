@@ -479,7 +479,7 @@ return [
         'default_prompt' => 'Haga clic en el botón %s para buscar un elemento multimedia',
     ],
     'media' => [
-        'menu_label' => 'Medios',
+        'menu_label' => 'Galería',
         'upload' => 'Subir',
         'move' => 'Mover',
         'delete' => 'Eliminar',
