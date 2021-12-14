@@ -99,6 +99,26 @@ class Plugin extends PluginBase
                     'tab' => 'Datos paciente',
                     'type' => 'text'
                 ],
+                'patient[names_familiar_1]' => [
+                    'label' => 'Nombres familiar 1',
+                    'tab' => 'Datos paciente',
+                    'type' => 'text'
+                ],
+                'patient[phone_familiar_1]' => [
+                    'label' => 'Teléfono familiar 1',
+                    'tab' => 'Datos paciente',
+                    'type' => 'text'
+                ],
+                'patient[names_familiar_2]' => [
+                    'label' => 'Nombres familiar 2',
+                    'tab' => 'Datos paciente',
+                    'type' => 'text'
+                ],
+                'patient[phone_familiar_2]' => [
+                    'label' => 'Teléfono familiar 2',
+                    'tab' => 'Datos paciente',
+                    'type' => 'text'
+                ],
                 'forms' => [
                     'label' => 'Formularios asignados',
                     'tab' => 'Formularios',
@@ -122,6 +142,16 @@ class Plugin extends PluginBase
 
     public function registerSettings()
     {
+    }
+
+    public function registerMarkupTags()
+    {
+        return [
+            'functions' => [
+                'postsByCategory' => ['\Web\Patients\Classes\Custom', 'postsByCategory'],
+                'featuredImageByPost' => ['\Web\Patients\Classes\Custom', 'featuredImageByPost'],
+            ]
+        ];
     }
 
     public function registerPermissions()
