@@ -89,6 +89,7 @@
       text-align: center;
       position: relative;
       height: auto;
+      padding: 10px 0;
   }
   
   .grid-item--width2 { width: 320px; }
@@ -108,3 +109,45 @@
     text-align: center;
     font-size: 1.4rem;
   }
+
+  .content-articles h2{
+    margin: 15px;
+  }
+
+
+  .tab-content {
+    padding: 0;
+  }
+
+  .category-menu {
+    width: 100%;
+  }
+
+  .content-articles .content{
+    width: 100%;
+    position: relative;
+    display: table;
+  }
+
+  .content-articles .content table{
+    border: 2px solid #000;
+    border-collapse:collapse;
+    margin: 20px auto;
+    
+  }
+
+  .content-articles .content table td, .content-articles .content table th{
+    border: 1px solid #000;
+  }
+
+  .content-articles .content p:nth-child(even) {
+    text-align: center;
+  }  
+  .content-articles .content p img:nth-child(even) {
+    width: 50%;
+  }
+
+  .content-articles .content p img:nth-child(odd) {
+    width: 50%;
+  }
+

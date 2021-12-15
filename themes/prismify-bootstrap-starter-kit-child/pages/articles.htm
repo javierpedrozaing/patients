@@ -28,8 +28,8 @@ use Web\Patients\Classes\Custom;
     </div>
 </div>
 
-<div class="category-menu">
-    <ul class="nav nav-tabs" id="articlesTab" role="tablist">
+<div class="category-menu row">
+    <ul class="nav nav-tabs col-xl-12" id="articlesTab" role="tablist">
       {% for category in categories %}
         {%  if category.id == 1 %}
           <li class="nav-item">
@@ -43,23 +43,21 @@ use Web\Patients\Classes\Custom;
       {% endfor %}
     </ul>
 
-      <div class="tab-content" id="articlesTabContent">    
+      <div class="tab-content col-xl-12" id="articlesTabContent">    
         {% for category in categories %}
         
           {%  if category.id == 1 %}
             <div class="tab-pane fade show active" id="{{category.slug}}" role="tabpanel" aria-labelledby="form-tab-1">
               
               {% for post in  postsByCategory(category.id) %}
-              {% set image = featuredImageByPost(post.id) %}
-               
-               
+              {% set image = featuredImageByPost(post.id) %}                              
                 <div class="grid">
-            
-                  <div class="grid-item" style="background-image: url({{ image.path }})">
-                      <h2>{{post.title}}</h2>
-                      <p class="overlay"></p>
-                      
-                  </div>
+                  <a href="article/{{post.slug}}">
+                    <div class="grid-item" style="background-image: url({{ image.path }})">
+                        <h2>{{post.title}}</h2>
+                        <p class="overlay"></p>
+                    </div>
+                  </a>
                 </div>
               {% endfor %}
 
@@ -80,15 +78,3 @@ use Web\Patients\Classes\Custom;
                 
       </div>
 </div>
-
-{% put scripts %}
-<script>
-
-  $(document).ready(function() {
-  });
-
-
-  
-
-</script>
-{% endput %}
