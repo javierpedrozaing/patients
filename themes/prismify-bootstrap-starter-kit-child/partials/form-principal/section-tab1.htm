@@ -13,13 +13,11 @@
     </div>
     <div class="sm-6">
         <div class="content-sign">
-            <label>Firma: </label>
-            <div id="bcPaint"></div>
-			
+            <label>Firma: </label>                    
             <div id="sign-customer" class="field-custom" ></div>
             <input type="text" hidden name="customer_sign" value="">
             <img id="saveimg-sign-customer"  alt="" style="display: none; border: 1px solid #ccc" />
-            <div id="clear">Limpiar</div>
+            
         </div>
     </div>
     
@@ -90,14 +88,6 @@
 <div id="signatureJSONCUSTOMER" hidden>
 </div>
 
-{% put scripts %}
-<script type="text/javascript">      
-        // sign field
-        $('#bcPaint').bcPaint();
-        //var sig = $('#sign-customer').jqSignature();
-        //$('#sign-customer').signature('option', 'syncFormat', syncFormat);
-   
+<div id="signatureJSON" hidden>
+</div>
 
-        // sign field
-</script>
-{% endput %}

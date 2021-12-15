@@ -54,3 +54,58 @@
         </form>
     </div>
 </div>
+
+
+{% put scripts %}
+<script type="text/javascript">      
+   $(function() {	
+    var sig = $('#sign-customer').signature({ syncField: '#signatureJSONCUSTOMER', syncFormat: 'PNG' });
+        //$('#sign-customer').signature('option', 'syncFormat', syncFormat);
+        $('#disable').click(function() {
+            var disable = $(this).text() === 'Disable';
+            $(this).text(disable ? 'Enable' : 'Disable');
+            sig.signature(disable ? 'disable' : 'enable');
+        });
+        $('#clear').click(function() {
+            sig.signature('clear');
+        });
+        $('#json').click(function() {
+            alert(sig.signature('toJSON'));
+        });
+        $('#saveSignature').click(function() {
+            alert(sig.signature('toSVG'));
+        });
+
+        $("#saveFormPrincipal").click(function(e) {
+            e.preventDefault();
+
+            console.log("signature json customer => ", $('#signatureJSONCUSTOMER').val());
+            var data = $('form').serializeArray();
+            var ps_sign = $('#signatureJSON').val();
+            var customer_sign = $('#signatureJSONCUSTOMER').val();
+            data[data.length] = { name: "ps_sign", value: ps_sign };
+            data[data.length] = { name: "customer_sign", value: customer_sign };
+            console.log("data final => ", data);
+            $.ajax({
+                    method: "POST",
+                    url: "save",
+                    data: data
+
+                })
+                .done(function(msg) {
+                    if (msg['code'] == 200) {
+                        console.log("data saved =>", msg['status']);
+                        swal("Excelente!", msg['status'], "success");
+                    } else {
+                        swal("Ohh!", msg['status'], "error");
+                    }
+
+                })
+                .fail(function() {
+                    swal("Error!", "Todos los campos son obligatorios!", "error");
+                });
+
+        });
+    });
+</script>
+{% endput %}

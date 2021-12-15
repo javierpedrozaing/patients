@@ -12,7 +12,8 @@ description = "Default layout"
 
         <link rel="icon" href="{{ 'assets/images/favicon.ico'|theme }}">
         <link rel="stylesheet" href="{{ 'assets/css/app.css'|theme }}">        
-        <link rel="stylesheet" href="{{ 'assets/js/jquery/jquery-ui.min.css' |theme }}">
+        
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/south-street/jquery-ui.css" rel="stylesheet">
         
         <link rel="stylesheet" href="{{ 'assets/css/global.css'|theme }}">
         <link rel="stylesheet" href="{{ 'assets/css/forms.css'|theme }}">
@@ -40,6 +41,7 @@ description = "Default layout"
 
             <footer id="app-footer" class="app-footer">
                 {% partial 'loadJS' %}
+                
                 {% partial 'app/footer' %}
             </footer>
 
